@@ -2,7 +2,7 @@
 
 
 
-## Calculadora simple
+## *Calculadora simple*
 [Calculator](./Calculator)
 ---
 
