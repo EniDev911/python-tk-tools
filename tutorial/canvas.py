@@ -30,7 +30,15 @@ my_canvas.create_text(250, 250, text="Porque yo lo valgo", font=("consolas", 20)
                         fill="white")
 
 
+## Add some buttons 
+btn_01 = Button(root, text = "Start")
+btn_02 = Button(root, text = "Reset")
+btn_03 = Button(root, text = "Exit")
 
+
+btn01_window = my_canvas.create_window(10, 10, anchor="nw", window=btn_01)
+btn02_window = my_canvas.create_window(70, 10, anchor="nw", window=btn_02)
+btn03_window = my_canvas.create_window(140, 10, anchor="nw", window=btn_03)
 
 
 root.mainloop()
