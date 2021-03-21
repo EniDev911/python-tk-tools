@@ -9,7 +9,6 @@ root.title('Digital Clock')
 
 
 # Time Label
-
 lbl_current_time = tk.Label(root, text = '', font=('Consolas', 60))
 lbl_current_time['fg'] = '#ffffff'
 lbl_current_time['bg'] = '#443355'
@@ -24,6 +23,4 @@ def update_clock():
 	root.after(1000, update_clock)
 
 update_clock()
-
-print(lbl_current_time['text'])
 root.mainloop()
