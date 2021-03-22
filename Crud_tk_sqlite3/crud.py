@@ -25,7 +25,7 @@ def connectionDB():
         messagebox.showwarning(title="Attention!",message="Database already exists")
 
     finally:
-        conn.close()
+        return conn.closet()
 
 
 def quitApplication():
@@ -56,11 +56,20 @@ def help():
     messagebox.showinfo(title='Contact', message=message)
 
 def blockedbox():
+    # block the boxes
     txt_fname['state'] = 'disabled'
     txt_lname['state'] = 'disabled'
     txt_phone['state'] = 'disabled'
     txt_address['state'] = 'disabled'
     txt_email['state'] = 'disabled'
+
+def unblockedbox():
+    #boxes unblocked
+    txt_fname['state'] = 'normal'
+    txt_lname['state'] = 'normal'
+    txt_phone['state'] = 'normal'
+    txt_address['state'] = 'normal'
+    txt_email['state'] = 'normal'
 
 
 
@@ -83,11 +92,19 @@ def create():
             messagebox.showwarning(title="Database", message='You have not created the database')    
 
 def get_contact():
-    pass
+
+    with sqlite3.connect('ContactDB.db') as conn:
+        cursor=conn.cursor()
+        try:
+            cursor.execute("SELECT * FROM Contacts")
+            print(cursor.fetchall())
+      
+
+        except sqlite3.OperationalError as e:
+            print(e)
 
 
-
-def read():
+def read(): 
     # recover a row 
     with sqlite3.connect('ContactDB.db') as conn:
         cursor=conn.cursor()
@@ -107,15 +124,19 @@ def read():
 
 def update():
     # Update one row
-    lbl_msg.grid(row=5, column=0)
-    txt_id.grid(row=5, column=1, sticky='w')
-    btn_watch.grid(row=5, column=1, sticky='e', ipadx=20)
+    lbl_msg.grid(row=6, column=0)
+    txt_id.grid(row=6, column=1, sticky='w')
+    btn_cancel.grid(row=6, column=1, sticky='w', padx=45, ipadx=8)
+    btn_watch.grid(row=6, column=1, sticky='e', ipadx=15)
+
 
     with sqlite3.connect('ContactDB.db') as conn:
         cursor=conn.cursor()
         data=(myName.get(),myLast.get(),myPhone.get(),myAddress.get())
-        try:
-            if validation():
+
+        
+        if validation():
+            try:
                 cursor.execute("""UPDATE Contacts SET 
                                     NAME=:name,
                                     LAST_NAME=:last_name,
@@ -124,21 +145,27 @@ def update():
                                     ADDRESS=:address 
                                     WHERE ID=:id""",
                                     {
-                                     'name' : myName.get(),
-                                     'last_name':myLast.get(),
-                                     'phone': myPhone.get(),
-                                     'address': myAddress.get(),
-                                     'id': myId.get()
+                                    'name' : myName.get(),
+                                    'last_name':myLast.get(),
+                                    'phone': myPhone.get(),
+                                    'email': myEmail.get(),
+                                    'address': myAddress.get(),
+                                    'id': myId.get()
                                     })
                 conn.commit()
-                messagebox.showinfo("BBDD","Registro actualizado con éxito")
+                messagebox.showinfo("Database","Record successfully updated")
+                cleanBox()
 
-        except sqlite3.OperationalError as e:
-            messagebox.showwarning(title="Database", message=e)
-        finally:
-            lbl_msg.grid_forget()
-            btn_watch.grid_forget()
-            txt_id.grid_forget()
+
+            except sqlite3.OperationalError as e:
+                messagebox.showwarning(title="Database", message=e)
+            finally:
+                lbl_msg.grid_forget()
+                btn_watch.grid_forget()
+                txt_id.grid_forget()
+                btn_cancel.grid_forget()
+
+        unblockedbox()
 
 
     
@@ -161,6 +188,9 @@ def delete():
                     conn.commit()
                     messagebox.showinfo(title="Database",message="Record successfuly deleted")
                 cleanBox()
+            else:
+                unblockedbox()
+                cleanBox()
 
         except sqlite3.OperationalError as e:
             messagebox.showinfo(title="Database",message=e)
@@ -176,6 +206,7 @@ def delete():
 root=Tk()
 root.title("Contact book")
 root.iconbitmap('iconapp.ico')
+root.geometry('450x300+550+250')
 root.resizable(0,0)
 root.config(padx=75)
 root.config(pady=20)
@@ -225,7 +256,7 @@ root.config(menu=menubar)
 frame = LabelFrame(root, text='Contacts', labelanchor='n', padx=10, pady=5)
 frame.grid(row=0, column=0, columnspan=2)
 
-lbl_msg = Label(frame, text='Entered a ID: ', fg='red')
+lbl_msg = Label(frame, text='Enter an ID: ', fg='red')
 txt_id = Entry(frame, width=6, textvariable=myId)
 
 
@@ -265,13 +296,13 @@ txt_address.grid(row=5, column=1)
 # Group Buttons
 
 frame2 = LabelFrame(root, text='Operations', labelanchor='n', padx=10, pady=5)
-frame2.grid(row=1, column=0, columnspan=2)
+frame2.grid(row=1, column=0, columnspan=2, sticky='w'+'e')
 
 btn_create=Button(frame2, text="Create", cursor='hand2',command=create)
-btn_create.grid(row=0, column=0, sticky='w'+'e', ipadx=25)
+btn_create.grid(row=0, column=0, sticky='w'+'e', ipadx=40)
 
-btn_read=Button(frame2, text="Read", padx=10, cursor='hand2',command=read)
-btn_read.grid(row=0, column=1, sticky='w'+'e', ipadx=22)
+btn_read=Button(frame2, text="Read", padx=10, cursor='hand2',command=get_contact)
+btn_read.grid(row=0, column=1, sticky='w'+'e', ipadx=35)
 
 btn_update=Button(frame2, text="Update", cursor='hand2',command=update)
 btn_update.grid(row=1, column=0, sticky='w'+'e')
@@ -280,6 +311,12 @@ btn_delete=Button(frame2, text="Delete", cursor='pirate',command=delete)
 btn_delete.grid(row=1, column=1, sticky='w'+'e')
 
 btn_watch = Button(frame, text='watch', command=read)
+btn_cancel = Button(frame, text='cancel', command=cleanBox)
 
+
+# List Contact 
+
+
+ 
 root.mainloop()
 
