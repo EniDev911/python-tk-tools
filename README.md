@@ -15,6 +15,6 @@
 </p>
 
 <p align="center">
-  <img src="img/reloj_01.png" alt="reloj photo" width="200" height="300"/>
+  <img src="img/reloj_01.png" alt="reloj photo" width="400" height="150"/>
   <img src="img/reloj_02.png" alt="reloj photo"/>
 </p>
