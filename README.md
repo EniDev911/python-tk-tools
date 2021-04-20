@@ -15,6 +15,6 @@
 </p>
 
 <p align="center">
-  <img src="img/reloj_01.png" style="border: black solid 2px" alt="reloj photo" width="400" height="180"/>
+  <img src="img/reloj_01.png" style="border-style: black solid 2px" alt="reloj photo" width="400" height="180"/>
   <img src="img/reloj_02.png" alt="reloj photo" width="400" height="180"/>
 </p>
