@@ -14,7 +14,7 @@
   <a href="./Reloj_Digital">Reloj_Digital</a>
 </p>
 
-<p align="left">
+<p align="center">
   <img src="img/reloj_01.png" alt="reloj photo"/>
   <img src="img/reloj_02.png" alt="reloj photo"/>
 </p>
