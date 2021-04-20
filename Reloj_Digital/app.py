@@ -1,18 +1,37 @@
 import tkinter as tk
+from tkinter import ttk
 import time
 
-
 root = tk.Tk()
-root.geometry("400x150+450+300")
 root.resizable(0, 0)
 root.title('Digital Clock')
+root.configure(bg = '#443355')
+root.configure(pady = 10)
 
+# Functions
+def changue_font(event):
+    lbl_current_time.configure(font = (combo.get(),60))
+
+# Style
+s = ttk.Style()
+s.configure("TLabel", font=('consolas', 60))
+s.configure("TCombobox", font=('consolas', 30))
 
 # Time Label
-lbl_current_time = tk.Label(root, text = '', font=('Consolas', 60))
-lbl_current_time['fg'] = '#ffffff'
-lbl_current_time['bg'] = '#443355'
-lbl_current_time.pack(fill='both', expand=True)
+lbl_current_time = ttk.Label(root, text = '', cursor='hand2')
+lbl_current_time['foreground'] = '#ffffff'
+lbl_current_time['background'] = '#443355'
+lbl_current_time.pack(fill='both', expand=True, padx=20)
+
+
+# Combobox Select font
+fonts = ['Helvetica', 'Consolas', 'Lucida Console', 'Segoe script',
+            'Corbel', 'Gabriola', 'Ink Free', 'Segoe UI Emoji']
+
+combo = ttk.Combobox(root, values=fonts, state='readonly')
+combo.current(1)
+combo.bind("<<ComboboxSelected>>",changue_font)
+combo.pack(ipadx=30)
 
 # Update time
 def update_clock():
