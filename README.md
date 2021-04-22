@@ -6,6 +6,11 @@
   <a href="./Calculator">Calculadora</a>
 </p>
 
+<p align="center">
+  <img src="img/calculator_01.png" alt="reloj photo" width="400" height="180"/>
+  <img src="img/calculator_02.png" alt="reloj photo" width="400" height="180"/>
+</p>
+
 ---
 
 
