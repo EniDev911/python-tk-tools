@@ -26,7 +26,7 @@ lbl_current_time.pack(fill='both', expand=True, padx=20)
 
 # Combobox Select font
 fonts = ['Helvetica', 'Consolas', 'Lucida Console', 'Segoe script',
-            'Corbel', 'Gabriola', 'Ink Free', 'Segoe UI Emoji']
+            'Corbel', 'Gabriola', 'Ink Free', 'Segoe UI Emoji', 'Terminal']
 
 combo = ttk.Combobox(root, values=fonts, state='readonly')
 combo.current(1)
