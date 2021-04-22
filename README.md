@@ -23,3 +23,7 @@
   <img src="img/reloj_01.png" alt="reloj photo" width="400" height="180"/>
   <img src="img/reloj_02.png" alt="reloj photo" width="400" height="180"/>
 </p>
+<p align="center">
+  <img src="img/reloj_03.png" alt="reloj photo" width="400" height="180"/>
+  <img src="img/reloj_04.png" alt="reloj photo" width="400" height="180"/>
+</p>
