@@ -1,104 +1,100 @@
 from tkinter import *
+from tkinter import ttk
+import tkinter.font as font
+
 
 root = Tk()
+#root.geometry("500x420")
 root.title("Calculator")
 root.resizable(0, 0)
-# root.iconbitmap('calculate.ico')
-root.iconphoto(False, PhotoImage(file='calculate.png'))
+root.config(padx=5)
+root.config(pady=5)
+# Mediante una variable de control
+# Manejamos el texto en pantalla
+input_ = StringVar()
+myFont = font.Font(size=17)
 
-# Display
-screen = Entry(root, text = "0", font = ("Calibri 20"), justify = "right")
-screen.grid(row = 0, column = 0, columnspan = 4, padx = 20, pady = 5)
-screen.configure(state = 'disabled')
+# display
+screen = Entry(root, text=input_,width=25,
+                justify='right', font=myFont, bd=4)
+screen.grid(row=0, columnspan=4,pady= (5, 15),ipady=5,sticky="w"+"e")
 
+# Key matrix contiene todos los valores para el teclado
+key_matrix = [["C", u"\u221A", "/", u"\u25C4"],
+              ["7", "8", "9", "*"],
+              ["4", "5", "6", "-"],
+              ["1", "2", "3", "+"],
+              ["!", 0, ".", "="]]
 
+# Definimos un dictionary para manejar los botones que creemos
+btn_dict = {}
 
-# Functions 
-i = 0
-def clic_button(value):
-	global i
-	screen['state'] = 'normal'
-	screen.insert(i, value)
-	screen['state'] = 'disabled'
-	i += 1
+# Variable para almacenar el resultado
+ans_to_print = 0
 
-def clean_screen(btn):
-	global i
-	if btn == btn_clear['text']:
-		screen.delete(0, END)
-		i = 0
-	elif btn == 'back':
-		i -= 1
-		screen.delete(i, END)
-		
+# Defining the function for calculation
+def Calculate(event):
 
-def operations():
-	global i
-	equation = screen.get()
-	result = eval(equation)
-	screen.delete(0, END)
-	screen.insert(0, result)
-	i = 0
+    # invocamos al texto que tiene el boton
+    button = event.widget.cget("text")
 
-# number buttons
-btn_1 = Button(root, text = "1", bd = 3, width = 5, height = 2, command = lambda: clic_button(1))
-btn_2 = Button(root, text = "2", bd = 3, width = 5, height = 2, command = lambda: clic_button(2))
-btn_3 = Button(root, text = "3", bd = 3, width = 5, height = 2, command = lambda: clic_button(3))
-btn_4 = Button(root, text = "4", bd = 3, width = 5, height = 2, command = lambda: clic_button(4))
-btn_5 = Button(root, text = "5", bd = 3, width = 5, height = 2, command = lambda: clic_button(5))
-btn_6 = Button(root, text = "6", bd = 3, width = 5, height = 2, command = lambda: clic_button(6))
-btn_7 = Button(root, text = "7", bd = 3, width = 5, height = 2, command = lambda: clic_button(7))
-btn_8 = Button(root, text = "8", bd = 3, width = 5, height = 2, command = lambda: clic_button(8))
-btn_9 = Button(root, text = "9", bd = 3, width = 5, height = 2, command = lambda: clic_button(9))
-btn_0 = Button(root, text = "0", bd = 3, width = 5, height = 2, command = lambda: clic_button(0))
+    # Referencia a los valores
+    global key_matrix, input_, ans_to_print
 
-# operation buttons 0
-btn_clear = Button(root, text = "AC", bd= 3, width = 5, height = 2, command = lambda: clean_screen('AC')) # btn_clear['activebacgrnd'] = "#F50743" # Active when to press
-btn_back = Button(root, text = "", width = 5, height = 2, command = lambda: clean_screen('back'))
-btn_parenthesis_left = Button(root, text = "(", bd= 3, width = 5, height = 2)
-btn_parenthesis_right = Button(root, text = ")", bd= 3, width = 5, height = 2)
-btn_point = Button(root, text = ".", bd = 3, width = 5, height = 2) 
+    try:
 
-# math buttons
-btn_div = Button(root, text = "÷", bd = 3, width = 5, height = 2)
-btn_multi = Button(root, text = "*", bd = 3, width = 5, height = 2) 
-btn_sum = Button(root, text = "÷", bd = 3, width = 5, height = 2)
-btn_rest = Button(root, text = "-", bd = 3, width = 5, height = 2)
-btn_result = Button(root, text = "=", bd = 3, width = 5, height = 2) 
+        if button == u"\u221A": # Para la raíz cuadrada
+            answer = float(input_.get())**(0.5)
+            ans_to_print = str(answer)
+            input_.set(str(answer))
+
+        elif button.upper() == "C":  # Limpiar pantalla
+            input_.set("")
+
+        elif button == "!":  # Factorial
+            def fact(n): return 1 if n == 0 else n*fact(n-1)
+            input_.set(str(fact(int(input_.get()))))
+
+        elif button == u"\u25C4":  # Backspace
+            input_.set(input_.get()[:len(input_.get())-1])
+
+        elif button == "=":  # Mostrando resultado
+            # Usamos eval para calcular la expresión de la pantalla
+            ans_to_print = str(eval(input_.get()))
+            input_.set(ans_to_print)
 
 
-# show widgets 
-btn_clear.grid(row = 1, column = 0, padx = 5, pady = 5)
-btn_back.grid(row = 5, column = 2, padx = 5, pady = 5)
-btn_parenthesis_left.grid(row = 1, column = 1, padx = 5, pady = 5)
-btn_parenthesis_right.grid(row = 1, column = 2, padx = 5, pady = 5)
+        else:
+            # Mostrando el digito presionado
+            input_.set(input_.get()+str(button))
+
+    except:
+        # En caso de que la expresión sea invalidad
+        input_.set("Wrong operation")
 
 
+# Declarando un estilo para los botones
+style = ttk.Style()
+style.configure("TButton",font = myFont, width=3)
+style.map("TButton", background = [('active', 'gray70')],
+                     foreground = [('pressed', 'green')])
 
+# Creando los botones con un loops
 
-# show widgets numeric buttons
-btn_1.grid(row = 2, column = 0, padx = 4, pady = 5)
-btn_2.grid(row = 2, column = 1, padx = 4, pady = 5)
-btn_3.grid(row = 2, column = 2, padx = 4, pady = 5)
-btn_4.grid(row = 3, column = 0, padx = 4, pady = 5)
-btn_5.grid(row = 3, column = 1, padx = 4, pady = 5)
-btn_6.grid(row = 3, column = 2, padx = 4, pady = 5)
-btn_7.grid(row = 4, column = 0, padx = 4, pady = 5)
-btn_8.grid(row = 4, column = 1, padx = 4, pady = 5)
-btn_9.grid(row = 4, column = 2, padx = 4, pady = 5)
-btn_0.grid(row = 5, column = 0, padx = 4, pady = 5, columnspan = 2, sticky = W + E)
+# Numero de fila que contiene los botones
+for i in range(len(key_matrix)):
+    # Numeros de columnas
+    for j in range(len(key_matrix[i])):
 
+        # Creando y añadiendo los botones al dictionary
+        btn_dict["btn_"+str(key_matrix[i][j])] = ttk.Button(
+          root, text=str(key_matrix[i][j]))
 
-# Show operations widget
-btn_div.grid(row = 1, column = 3, padx = 5, pady = 5)
-btn_multi.grid(row = 2, column = 3, padx = 5, pady = 5)
-btn_sum.grid(row = 3, column = 3, padx = 5, pady = 5)
-btn_rest.grid(row = 4, column = 3, padx = 5, pady = 5)
-btn_result.grid(row = 5, column = 3, padx = 5, pady = 5)
+        # Posicionando los botones con grid()
+        btn_dict["btn_"+str(key_matrix[i][j])].grid(
+          row=i+1, column=j, ipady=5,sticky="w"+"e")
 
-
-# bind key with btn
-# btn_1.bind('<Button-1>', clic_button(btn_1['text'].get()))
-
+        # Asignando la acción a los botones al presionas el click izquierdo
+        btn_dict["btn_"+str(key_matrix[i][j])].bind('<Button-1>', Calculate)
 
 root.mainloop()
