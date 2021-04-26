@@ -29,6 +29,8 @@
   <img src="img/reloj_04.png" alt="reloj photo" width="400" height="180"/>
 </p>
 
+---
+
 ### *Calculator Age*
 <p style="font-size:12;">
   <a href="#">Caculadora edad</a>
