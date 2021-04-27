@@ -57,3 +57,18 @@
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="img/login_01.png" alt="login photo" width="350" height="500"/>
 </p>
+
+---
+
+### *Modern Clock*
+<p style="font-size:12;">
+  <a href="./Login_Tkinter">Login Tk</a>
+</p>
+
+<p align="center">
+  <img src="img/modern_clock_01.png" alt="modern_clock photo" width="1400" height="700"/>
+</p>
+<br/>
+<p align="center">
+  <img src="img/modern_clock_02.png" alt="modern_clock photo" width="1400" height="700"/>
+</p>
