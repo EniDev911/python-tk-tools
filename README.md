@@ -49,6 +49,7 @@
 </p>
 
 <p align="center">
-  <img src="img/login_02.png" style='padding-right:10px;' alt="calculadora photo" width="350" height="500"/>
-  <img src="img/login_01.png" alt="calculadora photo" width="350" height="500"/>
+  <img src="img/login_02.png" alt="login photo" width="350" height="500"/>
+  <p></p>
+  <img src="img/login_01.png" alt="login photo" width="350" height="500"/>
 </p>
