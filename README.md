@@ -8,6 +8,7 @@
 
 <p align="center">
   <img src="img/calculator_01.png" alt="calculator photo" width="380" height="420"/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="img/calculator_02.png" alt="calculator photo" width="380" height="420"/>
 </p>
 
@@ -38,6 +39,7 @@
 
 <p align="center">
   <img src="img/calculator_age_01.png" alt="calculadora photo" width="380" height="400"/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="img/calculator_age_02.png" alt="calculadora photo" width="380" height="400"/>
 </p>
 
