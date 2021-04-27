@@ -64,11 +64,12 @@
 <p style="font-size:12;">
   <a href="./Login_Tkinter">Login Tk</a>
 </p>
-
+<h2>Mode fullscreen (F11)</h2>
 <p align="center">
   <img src="img/modern_clock_01.png" alt="modern_clock photo" width="1400" height="700"/>
 </p>
 <br/>
+<h2>Normal Mode (Escape)</h2>
 <p align="center">
   <img src="img/modern_clock_02.png" alt="modern_clock photo" width="800" height="300"/>
 </p>
