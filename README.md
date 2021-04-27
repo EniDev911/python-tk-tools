@@ -73,3 +73,5 @@
 <p align="center">
   <img src="img/modern_clock_02.png" alt="modern_clock photo" width="800" height="300"/>
 </p>
+
+---
