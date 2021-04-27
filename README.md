@@ -49,7 +49,7 @@
 
 ### *Login Tk*
 <p style="font-size:12;">
-  <a href="./Modern_clock">Login Tk</a>
+  <a href="./Login_Tkinter">Login Tk</a>
 </p>
 
 <p align="center">
@@ -62,7 +62,7 @@
 
 ### *Modern Clock*
 <p style="font-size:12;">
-  <a href="./Login_Tkinter">Modern Digital Clock</a>
+  <a href="./Modern_clock">Modern Digital Clock</a>
 </p>
 <h2>Mode fullscreen (F11)</h2>
 <p align="center">
