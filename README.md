@@ -47,7 +47,7 @@
 
 ### *Login Tk*
 <p style="font-size:12;">
-  <a href="#">Login Tk</a>
+  <a href="./Login_Tkinter">Login Tk</a>
 </p>
 
 <p align="center">
