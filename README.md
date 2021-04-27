@@ -50,6 +50,6 @@
 
 <p align="center">
   <img src="img/login_02.png" alt="login photo" width="350" height="500"/>
-   &nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="img/login_01.png" alt="login photo" width="350" height="500"/>
 </p>
