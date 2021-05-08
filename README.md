@@ -2,7 +2,7 @@
 
 
 ### *Calculator simple*
-<p style="font-size:12;">
+<p style="font-size:12px;">
   <a href="./Calculator">Calculadora</a>
 </p>
 
@@ -16,7 +16,7 @@
 
 
 ### *Digital Clock*
-<p style="font-size:12;">
+<p style="font-size:12px;">
   <a href="./Reloj_Digital">Reloj Digital</a>
 </p>
 
@@ -35,7 +35,7 @@
 ---
 
 ### *Calculator Age*
-<p style="font-size:12;">
+<p style="font-size:12px;">
   <a href="./calculator_age">Caculadora edad</a>
 </p>
 
@@ -48,7 +48,7 @@
 ---
 
 ### *Login Tk*
-<p style="font-size:12;">
+<p style="font-size:12px;">
   <a href="./Login_Tkinter">Login Tk</a>
 </p>
 
@@ -61,7 +61,7 @@
 ---
 
 ### *Modern Clock*
-<p style="font-size:12;">
+<p style="font-size:12px;">
   <a href="./Modern_clock">Modern Digital Clock</a>
 </p>
 <h2>Mode fullscreen (F11)</h2>
