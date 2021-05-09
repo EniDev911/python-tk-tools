@@ -17,7 +17,7 @@
 
 ### *Digital Clock*
 <p style="font-size:12px;">
-  <a href="./Reloj_Digital">Reloj Digital</a>
+  <a href="./Splash_screen">Reloj Digital</a>
 </p>
 
 <p align="center">
