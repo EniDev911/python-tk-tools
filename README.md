@@ -31,7 +31,6 @@
   &nbsp;&nbsp;&nbsp;
   <img src="img/reloj_04.png" alt="reloj photo" width="400" height="180"/>
 </p>
-
 ---
 
 ### *Calculator Age*
@@ -75,3 +74,20 @@
 </p>
 
 ---
+
+### *Splash charge screen*
+<p style="font-size:12px;">
+  <a href="./Reloj_Digital">Charge Screen</a>
+</p>
+
+<p align="center">
+  <img src="img/splash_01.png" alt="splash photo" width="400" height="230"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="img/splash_02.png" alt="splash photo" width="400" height="230"/>
+</p>
+
+<p align="center">
+  <img src="img/splash_03.png" alt="splash photo" width="400" height="230"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="img/splash_04.png" alt="splash photo" width="400" height="230"/>
+</p>
