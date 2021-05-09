@@ -17,7 +17,7 @@
 
 ### *Digital Clock*
 <p style="font-size:12px;">
-  <a href="./Splash_screen">Reloj Digital</a>
+  <a href="./Reloj_Digital">Reloj Digital</a>
 </p>
 
 <p align="center">
@@ -77,7 +77,7 @@
 
 ### *Splash charge screen*
 <p style="font-size:12px;">
-  <a href="./Reloj_Digital">Charge Screen</a>
+  <a href="./Splash_screen">Charge Screen</a>
 </p>
 
 <p align="center">
