@@ -91,3 +91,17 @@
   &nbsp;&nbsp;&nbsp;
   <img src="img/splash_04.png" alt="splash photo" width="400" height="230"/>
 </p>
+
+### *POKEDEX CANVAS*
+<p style="font-size:12px;">
+  <a href="./pokedex">Charge Screen</a>
+</p>
+
+<p align="center">
+  <img src="img/pokedex_01.png" alt="splash photo" width="300" height="430"/>
+  &nbsp;&nbsp;
+  <img src="img/pokedex_02.png" alt="splash photo" width="300" height="430"/>
+</p>
+
+
+
