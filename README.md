@@ -98,9 +98,9 @@
 </p>
 
 <p align="center">
-  <img src="img/pokedex_01.png" alt="splash photo" width="300" height="430"/>
+  <img src="img/pokedex_01.png" alt="splash photo" width="350" height="430"/>
   &nbsp;&nbsp;
-  <img src="img/pokedex_02.png" alt="splash photo" width="300" height="430"/>
+  <img src="img/pokedex_02.png" alt="splash photo" width="350" height="430"/>
 </p>
 
 
