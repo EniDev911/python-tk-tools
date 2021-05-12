@@ -94,7 +94,7 @@
 
 ### *POKEDEX CANVAS*
 <p style="font-size:12px;">
-  <a href="./pokedex">Charge Screen</a>
+  <a href="./Pokedex">Charge Screen</a>
 </p>
 
 <p align="center">
