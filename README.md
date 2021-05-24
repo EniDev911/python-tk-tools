@@ -7,9 +7,9 @@
 </p>
 
 <p align="center">
-  <img src="img/calculator_01.png" alt="calculator photo" width="360" height="420"/>
+  <img src="img/calculator_01.png" alt="calculator photo" width="350" height="390"/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="img/calculator_02.png" alt="calculator photo" width="360" height="420"/>
+  <img src="img/calculator_02.png" alt="calculator photo" width="350" height="390"/>
 </p>
 
 ---
