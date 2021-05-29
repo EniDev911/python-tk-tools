@@ -111,9 +111,9 @@
 </p>
 
 <p align="center">
-  <img src="./To_DoList/img/01.png" alt="To-Do List App" width="450" height="600"/>
+  <img src="./To_DoList/img/01.png" alt="To-Do List App" width="400" height="600"/>
   &nbsp;&nbsp;
-  <img src="./To_DoList/img/02.png" alt="To-Do List App" width="450" height="600"/>
+  <img src="./To_DoList/img/02.png" alt="To-Do List App" width="400" height="600"/>
 </p>
 
 
