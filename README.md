@@ -104,7 +104,7 @@
 </p>
 
 <p align="center">
-  <img src="img/pokedex.gif" alt="pokedex gif"/>
+  <img src="img/pokedex.gif" alt="pokedex gif" width="700" height="500"/>
 </p>
 ---
 
