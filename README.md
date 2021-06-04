@@ -7,9 +7,9 @@
 </p>
 
 <p align="center">
-  <img src="img/calculator_01.png" alt="calculator photo" width="310" height="350"/>
+  <img src="img/calculator_01.png" alt="calculator photo" width="350" height="350"/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="img/calculator_02.png" alt="calculator photo" width="310" height="350"/>
+  <img src="img/calculator_02.png" alt="calculator photo" width="350" height="350"/>
 </p>
 
 ---
@@ -98,11 +98,14 @@
 </p>
 
 <p align="center">
-  <img src="img/pokedex_01.png" alt="splash photo" width="350" height="430"/>
+  <img src="img/pokedex_01.png" alt="pokedex photo" width="350" height="430"/>
   &nbsp;&nbsp;
-  <img src="img/pokedex_02.png" alt="splash photo" width="350" height="430"/>
+  <img src="img/pokedex_02.png" alt="pokedex photo" width="350" height="430"/>
 </p>
 
+<p align="center">
+  <img src="img/pokedex.gif" alt="pokedex gif"/>
+</p>
 ---
 
 ### *To-Do List App*
