@@ -1,6 +1,6 @@
 ## install dependencies 
 
-````bash
+```bash
 pip install -r requiements.txt
 ```
 
@@ -8,6 +8,6 @@ pip install -r requiements.txt
 ## Execute the main.py file
 
 
-```
-python main.pu
+```bash
+python main.py
 ```
