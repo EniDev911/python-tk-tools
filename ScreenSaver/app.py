@@ -50,6 +50,7 @@ class ScreenSaver:
     def __init__(self, master, num_balls):
         self.master = master
         self.master.overrideredirect(1)
+        self.master.attributes('-alpha', 0.6)
         w, h = self.master.winfo_screenwidth(), self.master.winfo_screenheight()
         self.balls = []
 
