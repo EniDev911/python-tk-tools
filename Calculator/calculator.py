@@ -6,11 +6,12 @@ import tkinter.font as font
 root = Tk()
 #root.geometry("500x420")
 root.title("Calculator")
+root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file='calculate.png'))
 root.resizable(0, 0)
 root.config(padx=5)
 root.config(pady=5)
-# Mediante una variable de control
-# Manejamos el texto en pantalla
+
+# maneja el texto en la pantalla
 input_ = StringVar()
 myFont = font.Font(size=17)
 

@@ -205,7 +205,8 @@ def delete():
 # Create GUI
 root=Tk()
 root.title("Contact book")
-root.iconbitmap('iconapp.ico')
+#root.iconbitmap('iconapp.ico')
+root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file='iconapp.png'))
 root.geometry('450x300+550+250')
 root.resizable(0,0)
 root.config(padx=75)

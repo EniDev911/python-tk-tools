@@ -1,24 +1,19 @@
-## *Enidev911*
+## *Enidev911*  <img src="assets/gif/python.gif" width="28">
 
 
-### *Calculator simple*
-<p style="font-size:12px;">
-  <a href="./Calculator">Calculadora</a>
+### *Simple calculator*
+
+
+<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a>
 </p>
 
-<p align="center">
-  <img src="img/calculator_01.png" alt="calculator photo" width="350" height="350"/>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="img/calculator_02.png" alt="calculator photo" width="350" height="350"/>
-</p>
 
 ---
 
 
 ### *Digital Clock*
-<p style="font-size:12px;">
-  <a href="./Reloj_Digital">Reloj Digital</a>
-</p>
+
+<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Reloj_Digital"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
 <p align="center">
   <img src="img/reloj_01.png" alt="reloj photo" width="400" height="180"/>
