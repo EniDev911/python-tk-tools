@@ -3,6 +3,11 @@
 
 ### *Simple calculator*
 
+<p align="center">
+  <img src="Calculator/screenshot/calculator_01.png" alt="calculator photo" width="350" height="350"/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Calculator/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
+</p>
 
 <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a>
 </p>
@@ -13,31 +18,32 @@
 
 ### *Digital Clock*
 
+<p align="center">
+  <img src="Reloj_Digital/screenshot/reloj_01.png" alt="reloj photo" width="400" height="180"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="Reloj_Digital/screenshot/reloj_02.png" alt="reloj photo" width="400" height="180"/>
+</p>
+
+<p align="center">
+  <img src="Reloj_Digital/screenshot/reloj_03.png" alt="reloj photo" width="400" height="180"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="Reloj_Digital/screenshot/reloj_04.png" alt="reloj photo" width="400" height="180"/>
+</p>
+
 <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Reloj_Digital"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
-<p align="center">
-  <img src="img/reloj_01.png" alt="reloj photo" width="400" height="180"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="img/reloj_02.png" alt="reloj photo" width="400" height="180"/>
-</p>
-
-<p align="center">
-  <img src="img/reloj_03.png" alt="reloj photo" width="400" height="180"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="img/reloj_04.png" alt="reloj photo" width="400" height="180"/>
-</p>
 ---
 
 ### *Calculator Age*
-<p style="font-size:12px;">
-  <a href="./calculator_age">Caculadora edad</a>
-</p>
+
 
 <p align="center">
-  <img src="img/calculator_age_01.png" alt="calculadora photo" width="380" height="400"/>
+  <img src="calculator_age/screenshot/calculator_age_01.png" alt="calculadora photo" width="380" height="400"/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="img/calculator_age_02.png" alt="calculadora photo" width="380" height="400"/>
+  <img src="calculator_age/screenshot/calculator_age_02.png" alt="calculadora photo" width="380" height="400"/>
 </p>
+
+<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./calculator_age"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
 ---
 
