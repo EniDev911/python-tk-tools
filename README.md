@@ -82,15 +82,15 @@
 ### *Splash charge screen*
 
 <p align="center">
-  <img src="Splash_screen/screenshot/splash_01.png" alt="splash photo" width="400" height="230"/>
+  <img src="Splash_screen/screenshot/splash_01.png" alt="splash photo" width="350" height="210"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="Splash_screen/screenshot/splash_02.png" alt="splash photo" width="400" height="230"/>
+  <img src="Splash_screen/screenshot/splash_02.png" alt="splash photo" width="350" height="210"/>
 </p>
 
 <p align="center">
-  <img src="Splash_screen/screenshot/splash_03.png" alt="splash photo" width="400" height="230"/>
+  <img src="Splash_screen/screenshot/splash_03.png" alt="splash photo" width="350" height="210"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="Splash_screen/screenshot/splash_04.png" alt="splash photo" width="400" height="230"/>
+  <img src="Splash_screen/screenshot/splash_04.png" alt="splash photo" width="350" height="210"/>
 </p>
 
 <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Splash_screen"><img src="assets/gif/file-py.gif" width="27"></a></p>
