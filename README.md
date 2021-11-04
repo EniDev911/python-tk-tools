@@ -63,11 +63,14 @@
 ### *Modern Clock*
 
 ***Mode fullscreen (F11)***
+
 <p align="center">
   <img src="Modern_clock/screenshot/modern_clock_01.png" alt="modern_clock photo" width="1400" height="700"/>
 </p>
 <br/>
+
 ***Normal Mode (Escape)***
+
 <p align="center">
   <img src="Modern_clock/screenshot/modern_clock_02.png" alt="modern_clock photo" width="800" height="300"/>
 </p>
@@ -107,9 +110,9 @@
 ### *To-Do List App*
 
 <p align="center">
-  <img src="To_DoList/screenshot/01.png" alt="To-Do List App" width="400" height="600"/>
+  <img src="To_DoList/screenshot/01.png" alt="To-Do List App" width="350" height="550"/>
   &nbsp;&nbsp;
-  <img src="To_DoList/screenshot/02.png" alt="To-Do List App" width="400" height="600"/>
+  <img src="To_DoList/screenshot/02.png" alt="To-Do List App" width="350" height="550"/>
 </p>
 
 <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./To_DoList"><img src="assets/gif/file-py.gif" width="27"></a></p>
