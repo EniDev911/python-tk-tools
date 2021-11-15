@@ -3,7 +3,7 @@
 #
 #         Autor: Marco Contreras
 #
-# Código fuente: https://github.com/EniDev911/desktop-app-aiep.git
+# Código fuente: https://github.com/EniDev911/PythonTk/blob/master/audiobook/main.py
 #     Copyright: (c) Marco Contreras
 #       Licence: GPL 3.0
 #-------------------------------------------------------------------------------
@@ -32,6 +32,14 @@ app.geometry('350x400')
 app.title('Audiobook')
 app.configure(bg=BG)
 
+## Functions
+
+def clic():
+	print('Hello')
+
+
+
+
 image = Image.open('assets/image/audiobook_01.png')
 image_resized = image.resize((85, 85), Image.ANTIALIAS)
 my_image = ImageTk.PhotoImage(image_resized)
@@ -54,7 +62,8 @@ page_number_box.pack()
 open_PDF = Button(app, text='Open', width=20, 
 					bd=2, relief='raised', 
 					bg='#21956F', fg='white',
-					cursor='hand2', font=('Century gothic', 12, 'bold'))
+					cursor='hand2', font=('Century gothic', 12, 'bold'),
+					command=clic)
 open_PDF.pack(pady=(20,0))
 
 say_PDF = Button(app, text='Talk', width=20,
@@ -62,6 +71,8 @@ say_PDF = Button(app, text='Talk', width=20,
 					bd=2, relief='raised',
 					cursor='hand2', font=('Century gothic', 12, 'bold'))
 say_PDF.pack(pady=(20, 0))
+
+
 
 ## text = 'Hola me llamo Marcos Alonso Contreras Villalobos'
 ## init the speaker
