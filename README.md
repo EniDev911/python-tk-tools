@@ -9,7 +9,7 @@
   <img src="Calculator/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b></i> :arrow_forward: <a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a>
+<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a>
 </p>
 
 

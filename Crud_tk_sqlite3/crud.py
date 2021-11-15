@@ -1,3 +1,10 @@
+# Se ejecuta para trabajar con ventanas HD, solo disponible en Windows
+try:
+    from ctypes import windll
+    windll.shcore.SetProcessDpiAwareness(1)
+except:
+    pass
+
 from tkinter import *
 from tkinter import messagebox
 import sqlite3
