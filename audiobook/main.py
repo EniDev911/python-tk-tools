@@ -12,20 +12,21 @@
 # Execute for HD windows, compatible with S.O windows
 try:
     from ctypes import windll
-    windll.shcore.SetProcessDpiAwareness(1)
+    windll.shcore.SetProcesDpiAwareness(1)
     print(windll.shcore)
 except:
     pass
 
-
 from tkinter import *
+from tkinter import filedialog
+from tkinter import messagebox
 import pyttsx3
 import PyPDF2
 from PIL import Image, ImageTk
 
 # COLORS
-BG = '#1E3C62'
-FG = '#C6CED7'
+BG = '#293442'
+FG = '#E8EBEF'
 ## GUI
 app = Tk()
 app.geometry('350x400')
@@ -33,12 +34,35 @@ app.title('Audiobook')
 app.configure(bg=BG)
 
 ## Functions
-
+path = None
 def clic():
-	print('Hello')
+	global path
+	path = filedialog.askopenfilename()
+	print(path)
+	lbl_openfile.pack()
 
+def talk():
+	page_n = page_number_box.get()
+	if path and page_n:
+		## init the speaker
+		speaker = pyttsx3.init()
+		## open the pdf
+		book = open(path, 'rb')
+		## read the pdf200...
+		read_file = PyPDF2.PdfFileReader(book)
+		try:
+			#choosing the page that we want to read
+			page = read_file.getPage(int(page_n))
+			## extract the text from the page
+			text = page.extractText()
 
-
+			speaker.say(text)
+			speaker.runAndWait()
+		except IndexError as e:
+			print(e)
+			messagebox.showinfo('information', 'The page is not in the range')
+	else:
+		messagebox.showinfo('information', 'you must choose a PDF file from the directory')
 
 image = Image.open('assets/image/audiobook_01.png')
 image_resized = image.resize((85, 85), Image.ANTIALIAS)
@@ -52,12 +76,16 @@ title = Label(app, text='Let listen to the book',
 			bg=BG, font='none 20', fg=FG)
 title.pack()
 
+lbl_openfile = Label(app, text=path)
+
 page_number = Label(app, text='Please enter the page number', 
 			bg=BG, font='none 14', fg=FG)
 page_number.pack(pady=(40,0))
 
-page_number_box = Entry(app, font='none 15', bg=BG)
+page_number_box = Entry(app, font='none 15', bg=BG, fg=FG)
 page_number_box.pack()
+
+
 
 open_PDF = Button(app, text='Open', width=20, 
 					bd=2, relief='raised', 
@@ -69,29 +97,9 @@ open_PDF.pack(pady=(20,0))
 say_PDF = Button(app, text='Talk', width=20,
 					bg='#21956F', fg='white',
 					bd=2, relief='raised',
-					cursor='hand2', font=('Century gothic', 12, 'bold'))
+					activebackground='gray60',
+					cursor='hand2', font=('Century gothic', 12, 'bold'),
+					command=talk)
 say_PDF.pack(pady=(20, 0))
-
-
-
-## text = 'Hola me llamo Marcos Alonso Contreras Villalobos'
-## init the speaker
-#speaker = pyttsx3.init()
-## open the pdf
-#book = open('jugar_dota1.pdf', 'rb')
-
-## read the pdf
-#read_file = PyPDF2.PdfFileReader(book)
-
-## choosing the page that we want to read
-
-## extract the text from the page
-#text = page.extractText()
-
-## print the text from the page
-#print(text)
-
-#speaker.say(text)
-#speaker.runAndWait()
 
 app.mainloop()
