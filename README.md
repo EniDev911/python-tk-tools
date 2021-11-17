@@ -30,7 +30,7 @@
   <img src="Reloj_Digital/screenshot/reloj_04.png" alt="reloj photo" width="370" height="180"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Reloj_Digital"><img src="assets/gif/file-py.gif" width="27"></a></p>
+<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./Reloj_Digital"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
 ---
 
