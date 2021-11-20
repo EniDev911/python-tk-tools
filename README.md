@@ -43,7 +43,7 @@
   <img src="calculator_age/screenshot/calculator_age_02.png" alt="calculadora photo" width="380" height="400"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./calculator_age"><img src="assets/gif/file-py.gif" width="27"></a></p>
+<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./calculator_age"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
 ---
 
@@ -55,7 +55,7 @@
   <img src="Login_Tkinter/screenshot/login_01.png" alt="login photo" width="350" height="500"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Login_Tkinter"><img src="assets/gif/file-py.gif" width="27"></a></p>
+<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./Login_Tkinter"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
 
 ---
@@ -75,7 +75,7 @@
   <img src="Modern_clock/screenshot/modern_clock_02.png" alt="modern_clock photo" width="800" height="300"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Modern_clock"><img src="assets/gif/file-py.gif" width="27"></a></p>
+<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./Modern_clock"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
 ---
 
