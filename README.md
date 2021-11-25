@@ -93,7 +93,7 @@
   <img src="Splash_screen/screenshot/splash_04.png" alt="splash photo" width="350" height="210"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Splash_screen"><img src="assets/gif/file-py.gif" width="27"></a></p>
+  <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b> :arrow_right: </i><a href="./Splash_screen"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
 ### *POKEDEX CANVAS*
 
