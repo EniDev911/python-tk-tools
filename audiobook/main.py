@@ -42,35 +42,51 @@ app.configure(bg=BG)
 
 
 ## Functions
+
+
+## Open file
 path = None
 def clic():
 	global path
 	path = filedialog.askopenfilename()
 	print(path)
+	lbl_openfile.config(text=path)
 	lbl_openfile.pack()
 
+
+## play talk
 def talk():
 	page_n = page_number_box.get()
-	if path and page_n:
+	if path:
 		## init the speaker
-		speaker = pyttsx3.init()
+		speaker = pyttsx3.init("sapi5")
 		## open the pdf
 		book = open(path, 'rb')
 		## read the pdf200...
-		read_file = PyPDF2.PdfFileReader(book)
+		reader = PyPDF2.PdfFileReader(book)
 		try:
-			#choosing the page that we want to read
-			page = read_file.getPage(int(page_n))
-			## extract the text from the page
-			text = page.extractText()
 
-			speaker.say(text)
-			speaker.runAndWait()
+			for page in range(reader.numPages):
+				#choosing the page that we want to read
+				next_page = reader.getPage(page)
+				## extract the text from the page
+				text = next_page.extractText()
+
+				speaker.say(text)
+				say_PDF.config(image=my_stopimg)
+				speaker.runAndWait()
+
 		except IndexError as e:
 			print(e)
 			messagebox.showinfo('information', 'The page is not in the range')
 	else:
 		messagebox.showinfo('information', 'you must choose a PDF file from the directory')
+
+
+## save talk
+def save_talk():
+	pass
+
 
 image = Image.open('assets/image/book_01.png')
 image_resized = image.resize((95, 145), Image.ANTIALIAS)
@@ -94,7 +110,7 @@ title = Label(app, text='Let listen to the book',
 			bg=BG, font='none 20', fg=FG)
 title.pack()
 
-lbl_openfile = Label(app, text=path)
+lbl_openfile = Label(app, text='')
 
 page_number = Label(app, text='Please enter the page number', 
 			bg=BG, font='none 14', fg=FG)
