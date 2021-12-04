@@ -22,6 +22,7 @@ from tkinter import filedialog
 from tkinter import messagebox
 import pyttsx3
 import PyPDF2
+import os
 from PIL import Image, ImageTk
 
 # COLORS
@@ -50,7 +51,8 @@ def clic():
 	global path
 	path = filedialog.askopenfilename()
 	print(path)
-	lbl_openfile.config(text=path)
+	filename = os.path.basename(path)
+	lbl_openfile.config(text=filename)
 	lbl_openfile.pack()
 
 
@@ -84,7 +86,8 @@ def talk():
 
 
 ## save talk
-def save_talk():
+def save_talk(content):
+
 	pass
 
 
@@ -110,7 +113,7 @@ title = Label(app, text='Let listen to the book',
 			bg=BG, font='none 20', fg=FG)
 title.pack()
 
-lbl_openfile = Label(app, text='')
+lbl_openfile = Label(app, text='', bg=BG, fg=FG)
 
 page_number = Label(app, text='Please enter the page number', 
 			bg=BG, font='none 14', fg=FG)
