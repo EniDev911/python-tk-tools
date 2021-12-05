@@ -19,6 +19,7 @@ except:
 
 from tkinter import *
 from tkinter import filedialog
+from tkinter.filedialog import asksaveasfile
 from tkinter import messagebox
 import pyttsx3
 import PyPDF2
@@ -50,16 +51,17 @@ app.configure(bg=BG)
 path = None
 def clic():
 	global path
-	path = filedialog.askopenfilename()
+	path = filedialog.askopenfilename(initialdir='./')
 	print(path)
 	filename = os.path.basename(path)
 	lbl_openfile.config(text=filename)
 	lbl_openfile.pack()
-
+	save_OUTPUT.place(x=148, y=210)
 
 ## play talk
 def talk():
 	page_n = page_number_box.get()
+	say_PDF.config(image=my_stopimg)
 	if path:
 		## init the speaker
 		speaker = pyttsx3.init("sapi5")
@@ -67,29 +69,44 @@ def talk():
 		book = open(path, 'rb')
 		## read the pdf200...
 		reader = PyPDF2.PdfFileReader(book)
-		try:
+		
+		if page_n != '':
+			read = reader.getPage(int(page_n))
+			r = read.extractText()
 
-			for page in range(reader.numPages):
-				#choosing the page that we want to read
-				next_page = reader.getPage(page)
-				## extract the text from the page
-				text = next_page.extractText()
+			speaker.say(r)
+			speaker.runAndWait()
 
-				speaker.say(text)
-				say_PDF.config(image=my_stopimg)
-				speaker.runAndWait()
+		elif page_n == '':
+			try:
 
-		except IndexError as e:
-			print(e)
-			messagebox.showinfo('information', 'The page is not in the range')
+				for page in range(reader.numPages):
+					#choosing the page that we want to read
+					next_page = reader.getPage(page)
+					## extract the text from the page
+					text = next_page.extractText()
+
+					speaker.say(text)
+					print(text)
+					speaker.runAndWait()
+
+
+			except IndexError as e:
+				print(e)
+				messagebox.showinfo('information', 'The page is not in the range')
 	else:
 		messagebox.showinfo('information', 'you must choose a PDF file from the directory')
 
 
 ## save talk
-def save_talk(content):
+def save_MP3(content):
 
-	pass
+	files = [('All files', '*.*'),
+			 ('MP3 files', '*.mp3')]
+	file = 	asksaveasfile(filetypes = files, defaultextension = files)
+
+	engine.save_to_file(content, file)
+
 
 
 image = Image.open('assets/image/book_01.png')
@@ -106,7 +123,7 @@ my_stopimg = ImageTk.PhotoImage(stop_resized)
 
 
 save_img = Image.open('assets/image/save.png')
-save_resized = save_img.resize((43, 43), Image.ANTIALIAS)
+save_resized = save_img.resize((28, 28), Image.ANTIALIAS)
 my_saveimg = ImageTk.PhotoImage(save_resized)
 
 
@@ -119,7 +136,7 @@ title = Label(app, text='Let listen to the book',
 			bg=BG, font='none 20', fg=FG)
 title.pack()
 
-lbl_openfile = Label(app, text='', bg=BG, fg=FG)
+lbl_openfile = Label(app, text='', bg=BG, fg=FG, font=('Century gothic', 12, 'italic'))
 
 page_number = Label(app, text='Please enter the page number', 
 			bg=BG, font='none 14', fg=FG)
@@ -151,7 +168,8 @@ save_OUTPUT = Button(app, image=my_saveimg, width=50,
 						bd=0, relief='raised',
 						activebackground='gray20',
 						cursor='hand2',
-						command=None)
-save_OUTPUT.place(x=148, y=360)
+						command=save_MP3)
+
+
 
 app.mainloop()
