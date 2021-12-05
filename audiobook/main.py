@@ -39,6 +39,7 @@ y_coordinate = (screen_height/2)-(height_window/2)
 
 app.geometry("%dx%d+%d+%d"%(width_window, height_window, x_coordinate, y_coordinate))
 app.title('Audiobook')
+app.resizable(0,0)
 app.configure(bg=BG)
 
 
@@ -104,6 +105,11 @@ stop_resized = stop_img.resize((43, 43), Image.ANTIALIAS)
 my_stopimg = ImageTk.PhotoImage(stop_resized)
 
 
+save_img = Image.open('assets/image/save.png')
+save_resized = save_img.resize((43, 43), Image.ANTIALIAS)
+my_saveimg = ImageTk.PhotoImage(save_resized)
+
+
 logo = Label(app, image=my_image, bg=BG)
 logo.pack(pady=(15,0))
 
@@ -138,5 +144,14 @@ say_PDF = Button(app, image=my_playimg, width=40,
 					cursor='hand2', font=('Century gothic', 12, 'bold'),
 					command=talk)
 say_PDF.place(x=155, y=105)
+
+
+save_OUTPUT = Button(app, image=my_saveimg, width=50,
+						bg=BG, fg='white',
+						bd=0, relief='raised',
+						activebackground='gray20',
+						cursor='hand2',
+						command=None)
+save_OUTPUT.place(x=148, y=360)
 
 app.mainloop()
