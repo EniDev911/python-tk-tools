@@ -19,9 +19,11 @@ except:
 
 from tkinter import *
 from tkinter import filedialog
+from tkinter.filedialog import asksaveasfile
 from tkinter import messagebox
 import pyttsx3
 import PyPDF2
+import os
 from PIL import Image, ImageTk
 import os 
 
@@ -39,40 +41,78 @@ y_coordinate = (screen_height/2)-(height_window/2)
 
 app.geometry("%dx%d+%d+%d"%(width_window, height_window, x_coordinate, y_coordinate))
 app.title('Audiobook')
+app.resizable(0,0)
 app.configure(bg=BG)
 
 
 ## Functions
+
+
+## Open file
 path = None
 def clic():
 	global path
-	path = filedialog.askopenfilename()
+	path = filedialog.askopenfilename(initialdir='./')
 	print(path)
 	lbl_openfile.config(text=path)
+	filename = os.path.basename(path)
+	lbl_openfile.config(text=filename)
 	lbl_openfile.pack()
+	save_OUTPUT.place(x=148, y=210)
 
+## play talk
 def talk():
 	page_n = page_number_box.get()
-	if path and page_n:
+	say_PDF.config(image=my_stopimg)
+	if path:
 		## init the speaker
-		speaker = pyttsx3.init()
+		speaker = pyttsx3.init("sapi5")
 		## open the pdf
 		book = open(path, 'rb')
 		## read the pdf200...
-		read_file = PyPDF2.PdfFileReader(book)
-		try:
-			#choosing the page that we want to read
-			page = read_file.getPage(int(page_n))
-			## extract the text from the page
-			text = page.extractText()
+		reader = PyPDF2.PdfFileReader(book)
+		
+		if page_n != '':
+			read = reader.getPage(int(page_n))
+			r = read.extractText()
 
-			speaker.say(text)
+			speaker.say(r)
 			speaker.runAndWait()
-		except IndexError as e:
-			print(e)
-			messagebox.showinfo('information', 'The page is not in the range')
+
+
+		elif page_n == '':
+			try:
+
+				for page in range(reader.numPages):
+					#choosing the page that we want to read
+					next_page = reader.getPage(page)
+					## extract the text from the page
+					text = next_page.extractText()
+
+					speaker.say(text)
+					print(text)
+					speaker.runAndWait()
+
+
+			except IndexError as e:
+				print(e)
+				messagebox.showinfo('information', 'The page is not in the range')
+
+		speaker.stop()
 	else:
 		messagebox.showinfo('information', 'you must choose a PDF file from the directory')
+
+
+## save talk
+def save_MP3(content):
+
+	files = [('All files', '*.*'),
+			 ('MP3 files', '*.mp3')]
+	file = 	asksaveasfile(filetypes = files, defaultextension = files)
+
+	engine.save_to_file(content, file)
+
+
 
 image = Image.open('assets/image/book_01.png')
 image_resized = image.resize((95, 145), Image.ANTIALIAS)
@@ -87,6 +127,11 @@ stop_resized = stop_img.resize((43, 43), Image.ANTIALIAS)
 my_stopimg = ImageTk.PhotoImage(stop_resized)
 
 
+save_img = Image.open('assets/image/save.png')
+save_resized = save_img.resize((28, 28), Image.ANTIALIAS)
+my_saveimg = ImageTk.PhotoImage(save_resized)
+
+
 logo = Label(app, image=my_image, bg=BG)
 logo.pack(pady=(15,0))
 
@@ -96,7 +141,7 @@ title = Label(app, text='Let listen to the book',
 			bg=BG, font='none 20', fg=FG)
 title.pack()
 
-lbl_openfile = Label(app, text='')
+lbl_openfile = Label(app, text='', bg=BG, fg=FG, font=('Century gothic', 12, 'italic'))
 
 page_number = Label(app, text='Please enter the page number', 
 			bg=BG, font='none 14', fg=FG)
@@ -121,5 +166,15 @@ say_PDF = Button(app, image=my_playimg, width=40,
 					cursor='hand2', font=('Century gothic', 12, 'bold'),
 					command=talk)
 say_PDF.place(x=155, y=105)
+
+
+save_OUTPUT = Button(app, image=my_saveimg, width=50,
+						bg=BG, fg='white',
+						bd=0, relief='raised',
+						activebackground='gray20',
+						cursor='hand2',
+						command=save_MP3)
+
+
 
 app.mainloop()

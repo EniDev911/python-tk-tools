@@ -9,7 +9,8 @@
   <img src="Calculator/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a>
+
+<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a>
 </p>
 
 
@@ -103,7 +104,7 @@
   <img src="Pokedex/screenshot/pokedex_02.png" alt="pokedex photo" width="350" height="430"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./Pokedex"><img src="assets/gif/file-py.gif" width="27"></a></p>
+  <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b> :arrow_right: </i><a href="./Pokedex"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
 ---
 
@@ -115,5 +116,5 @@
   <img src="To_DoList/screenshot/02.png" alt="To-Do List App" width="350" height="550"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Go to code</b>🡆</i><a href="./To_DoList"><img src="assets/gif/file-py.gif" width="27"></a></p>
+  <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b> :arrow_right: </i><a href="./To_DoList"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
