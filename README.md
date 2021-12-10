@@ -61,12 +61,12 @@
 ### *Login Tk*
 
 <p align="center">
-  <img src="Login_Tkinter/assets/screenshot/login_02.png" alt="login photo" width="350" height="500"/>
+  <img src="login_tk_a/assets/screenshot/login_02.png" alt="login photo" width="350" height="500"/>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="Login_Tkinter/assets/screenshot/login_01.png" alt="login photo" width="350" height="500"/>
+  <img src="login_tk_a/assets/screenshot/login_01.png" alt="login photo" width="350" height="500"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./Login_Tkinter"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tkinter/app.py?color=darkorange&logo=buffer&style=flat-square"></p>
+<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./Login_Tkinter"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=buffer&style=flat-square"></p>
 
 
 ---
