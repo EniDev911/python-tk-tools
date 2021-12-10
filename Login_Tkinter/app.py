@@ -48,7 +48,7 @@ Frame(w, width=180, height=2, bg="#139313").place(x=80,y=330)
 # Include image
 from PIL import Image, ImageTk
 
-image1 = Image.open('user.png')
+image1 = Image.open('assets/img/user.png')
 timage = ImageTk.PhotoImage(image1)
 
 limage = Label(image=timage, border = 0, bg="white",justify="center")
@@ -65,7 +65,7 @@ def cmd():
 Button(w, width=20, height=2, 
         text='L O G I N',fg="white",bg='#139511',
         font=('Helvetica', 11, 'bold'),border=0, 
-        activebackground='darkblue',activeforeground='yellow',
+        activebackground='darkorange',activeforeground='yellow',
         cursor='hand2',command=cmd).place(x=80, y=375)
 
 

@@ -7,6 +7,7 @@ root = Tk()
 #root.geometry("500x420")
 root.title("Calculator")
 path_logo = r'assets\logo\logo.png'
+# Comenta la siguiente línea si no tienes la ruta del logo
 root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file=path_logo))
 root.resizable(0, 0)
 root.config(padx=5)
@@ -96,7 +97,7 @@ for i in range(len(key_matrix)):
         btn_dict["btn_"+str(key_matrix[i][j])].grid(
           row=i+1, column=j, ipady=5,sticky="w"+"e")
 
-        # Asignando la acción a los botones al presionas el click izquierdo
+        # Asignando la acción a los botones al presionas el clic izquierdo
         btn_dict["btn_"+str(key_matrix[i][j])].bind('<Button-1>', Calculate)
 
 root.mainloop()
