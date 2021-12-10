@@ -9,13 +9,13 @@
 ### *Simple calculator*
 
 <p align="center">
-  <img src="Calculator/assets/screenshot/calculator_01.png" alt="calculator photo" width="350" height="350"/>
+  <img src="basic_calculator/assets/screenshot/calculator_01.png" alt="calculator photo" width="350" height="350"/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="Calculator/assets/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
+  <img src="basic_calculator/assets/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
 </p>
 
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./calculator"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator/main.py?color=darkorange&logo=buffer&style=flat-square">
+<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./basic_calculator"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=buffer&style=flat-square">
 </p>
 
 
@@ -25,18 +25,18 @@
 ### *Digital Clock*
 
 <p align="center">
-  <img src="Reloj_Digital/screenshot/reloj_01.png" alt="reloj photo" width="370" height="180"/>
+  <img src="digital-clock/assets/screenshot/reloj_01.png" alt="reloj photo" width="370" height="180"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="Reloj_Digital/screenshot/reloj_02.png" alt="reloj photo" width="370" height="180"/>
+  <img src="digital-clock/assets/screenshot/reloj_02.png" alt="reloj photo" width="370" height="180"/>
 </p>
 
 <p align="center">
-  <img src="Reloj_Digital/screenshot/reloj_03.png" alt="reloj photo" width="370" height="180"/>
+  <img src="digital-clock/assets/screenshot/reloj_03.png" alt="reloj photo" width="370" height="180"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="Reloj_Digital/screenshot/reloj_04.png" alt="reloj photo" width="370" height="180"/>
+  <img src="digital-clock/assets/screenshot/reloj_04.png" alt="reloj photo" width="370" height="180"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./Reloj_Digital"><img src="assets/gif/file-py.gif" width="27"></a></p>
+<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./digital-clock"><img src="assets/gif/file-py.gif" width="27"></a></p>
 
 ---
 
