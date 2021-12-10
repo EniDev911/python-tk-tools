@@ -1,12 +1,13 @@
 from tkinter import *
 from tkinter import ttk
 import tkinter.font as font
-
+import os
 
 root = Tk()
 #root.geometry("500x420")
 root.title("Calculator")
-root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file='calculate.png'))
+path_logo = r'assets\logo\logo.png'
+root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file=path_logo))
 root.resizable(0, 0)
 root.config(padx=5)
 root.config(pady=5)
