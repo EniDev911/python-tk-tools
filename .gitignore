@@ -1,4 +1,10 @@
 venv/
+build/
+__pycache__/
+dist/
+Output/
 
 *.mp3
 *.db
+*.iss
+*.spec
