@@ -15,7 +15,7 @@
 </p>
 
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a> <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/Calculator/calculator.py?color=darkorange&logo=buffer&style=flat-square">
+<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a> <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/Calculator/main.py?color=darkorange&logo=buffer&style=flat-square">
 </p>
 
 
