@@ -2,6 +2,18 @@ from tkinter import *
 from tkinter import ttk
 import tkinter.font as font
 import os
+import sys
+
+
+if getattr(sys, 'frozen', False):
+    # If the application is run as a bundle, the PyInstaller bootloader
+    # extends the sys module by a flag frozen=True and sets the app 
+    # path into variable _MEIPASS'.
+    application_path = sys._MEIPASS
+else:
+    application_path = os.path.dirname(os.path.abspath(__file__))
+
+
 
 root = Tk()
 #root.geometry("500x420")
@@ -84,8 +96,12 @@ style.map("TButton", background = [('active', 'gray70')],
 
 # Creando los botones con un loops
 
+def write(char):
+    print(char)
+
 # Numero de fila que contiene los botones
 for i in range(len(key_matrix)):
+    print(i)
     # Numeros de columnas
     for j in range(len(key_matrix[i])):
 
@@ -99,5 +115,16 @@ for i in range(len(key_matrix)):
 
         # Asignando la acción a los botones al presionas el clic izquierdo
         btn_dict["btn_"+str(key_matrix[i][j])].bind('<Button-1>', Calculate)
+        
+
+
+
+for n in range(0, 10):
+    print(n)
+    root.bind(str(n), lambda event: write(event.char))
+    root.bind(f"<KP_{n}>", lambda event: write(event.char))
+    btn_dict["btn_"+str(key_matrix[i][j])].bind(f"<KP_{n}>", Calculate)
+    
+
 
 root.mainloop()
