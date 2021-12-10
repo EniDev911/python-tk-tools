@@ -44,8 +44,8 @@ app.title('Audiobook')
 app.resizable(0,0)
 app.configure(bg=BG)
 
-
-## Functions
+## init the speaker
+engine = pyttsx3.init("sapi5")
 
 
 ## Open file
@@ -60,13 +60,14 @@ def clic():
 	lbl_openfile.pack()
 	save_OUTPUT.place(x=148, y=210)
 
+
+## Read file
+
 ## play talk
 def talk():
 	page_n = page_number_box.get()
 	say_PDF.config(image=my_stopimg)
 	if path:
-		## init the speaker
-		speaker = pyttsx3.init("sapi5")
 		## open the pdf
 		book = open(path, 'rb')
 		## read the pdf200...
@@ -76,41 +77,53 @@ def talk():
 			read = reader.getPage(int(page_n))
 			r = read.extractText()
 
-			speaker.say(r)
-			speaker.runAndWait()
-
+			engine.say(r)
+			engine.runAndWait()
 
 		elif page_n == '':
 			try:
+				contenido = ''
 
 				for page in range(reader.numPages):
 					#choosing the page that we want to read
 					next_page = reader.getPage(page)
 					## extract the text from the page
 					text = next_page.extractText()
-
-					speaker.say(text)
-					print(text)
-					speaker.runAndWait()
+					contenido += text
+					engine.say(text)
+					print(contenido)
+					engine.runAndWait()
 
 
 			except IndexError as e:
 				print(e)
 				messagebox.showinfo('information', 'The page is not in the range')
+		book.close()
 
-		speaker.stop()
 	else:
 		messagebox.showinfo('information', 'you must choose a PDF file from the directory')
 
 
 ## save talk
-def save_MP3(content):
+def save_as(document):
+
+	book = open(document, 'rb')
+	reader = PyPDF2.PdfFileReader(book)
 
 	files = [('All files', '*.*'),
 			 ('MP3 files', '*.mp3')]
-	file = 	asksaveasfile(filetypes = files, defaultextension = files)
 
-	engine.save_to_file(content, file)
+	file = 	asksaveasfile(filetypes = files, defaultextension = files)
+	contenido = ''
+	for page in range(reader.numPages):
+		next_page = reader.getPage(page)
+		text = next_page.extractText()
+		contenido += text
+
+	print(contenido)
+
+
+	#engine.save_to_file(contenido, file)
 
 
 
@@ -173,7 +186,7 @@ save_OUTPUT = Button(app, image=my_saveimg, width=50,
 						bd=0, relief='raised',
 						activebackground='gray20',
 						cursor='hand2',
-						command=save_MP3)
+						command=lambda : save_as(path))
 
 
 

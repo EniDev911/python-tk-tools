@@ -1,3 +1,8 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/EniDev911/PythonTk?color=darkorange&logo=files&logoColor=yellow&style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/EniDev911/PythonTk?color=blue&logo=python&logoColor=darkorange&style=for-the-badge)
+
+
+
 ## *Enidev911*  <img src="assets/gif/python.gif" width="28">
 
 
@@ -10,8 +15,9 @@
 </p>
 
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a>
+<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./Calculator"><img src="assets/gif/file-py.gif" width="27"></a> <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/Calculator/calculator.py?color=darkorange&logo=buffer&style=flat-square">
 </p>
+
 
 
 ---
