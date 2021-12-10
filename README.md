@@ -1,5 +1,5 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/EniDev911/PythonTk?color=darkorange&logo=files&logoColor=yellow&style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/EniDev911/PythonTk?color=blue&logo=python&logoColor=darkorange&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/EniDev911/PythonTk?color=darkorange&logo=files&logoColor=yellow&style=for-the-badge)&nbsp;&nbsp;&nbsp;
+![GitHub top language](https://img.shields.io/github/languages/top/EniDev911/PythonTk?color=blue&logo=python&logoColor=darkorange&style=for-the-badge)&nbsp;&nbsp;&nbsp;
 
 
 
@@ -15,7 +15,7 @@
 </p>
 
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./basic_calculator"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=buffer&style=flat-square">
+<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./basic_calculator"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=buffer&style=flat-square">
 </p>
 
 
@@ -25,18 +25,18 @@
 ### *Digital Clock*
 
 <p align="center">
-  <img src="digital-clock/assets/screenshot/reloj_01.png" alt="reloj photo" width="370" height="180"/>
+  <img src="digital_clock/assets/screenshot/reloj_01.png" alt="reloj photo" width="370" height="180"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="digital-clock/assets/screenshot/reloj_02.png" alt="reloj photo" width="370" height="180"/>
+  <img src="digital_clock/assets/screenshot/reloj_02.png" alt="reloj photo" width="370" height="180"/>
 </p>
 
 <p align="center">
-  <img src="digital-clock/assets/screenshot/reloj_03.png" alt="reloj photo" width="370" height="180"/>
+  <img src="digital_clock/assets/screenshot/reloj_03.png" alt="reloj photo" width="370" height="180"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="digital-clock/assets/screenshot/reloj_04.png" alt="reloj photo" width="370" height="180"/>
+  <img src="digital_clock/assets/screenshot/reloj_04.png" alt="reloj photo" width="370" height="180"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./digital-clock"><img src="assets/gif/file-py.gif" width="27"></a></p>
+<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./digital-clock"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/digital_clock/app.py?color=darkorange&logo=buffer&style=flat-square"></p>
 
 ---
 
