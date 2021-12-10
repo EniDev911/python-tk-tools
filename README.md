@@ -66,7 +66,7 @@
   <img src="login_tk_a/assets/screenshot/login_01.png" alt="login photo" width="350" height="500"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./Login_Tkinter"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=buffer&style=flat-square"></p>
+<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./login_tk_a"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=buffer&style=flat-square"></p>
 
 
 ---
@@ -76,17 +76,17 @@
 ***Mode fullscreen (F11)***
 
 <p align="center">
-  <img src="Modern_clock/screenshot/modern_clock_01.png" alt="modern_clock photo" width="1400" height="700"/>
+  <img src="digital_clock_modern/screenshot/modern_clock_01.png" alt="modern_clock photo" width="1400" height="700"/>
 </p>
 <br/>
 
 ***Normal Mode (Escape)***
 
 <p align="center">
-  <img src="Modern_clock/screenshot/modern_clock_02.png" alt="modern_clock photo" width="800" height="300"/>
+  <img src="digital_clock_modern/screenshot/modern_clock_02.png" alt="modern_clock photo" width="800" height="300"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./Modern_clock"><img src="assets/gif/file-py.gif" width="27"></a></p>
+<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./digital_clock_modern"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=buffer&style=flat-square"></p>
 
 ---
 
