@@ -15,7 +15,8 @@
   <img src="basic_calculator/assets/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code</b> :arrow_right: </i><a href="./basic_calculator"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=buffer&style=flat-square">
+<p align="center">
+  <a href="./basic_calculator"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=buffer&style=flat-square">
 </p>
 
 
@@ -37,7 +38,9 @@
   <img src="digital_clock/assets/screenshot/reloj_04.png" alt="reloj photo" width="370" height="180"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./digital_clock"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/digital_clock/app.py?color=darkorange&logo=buffer&style=flat-square"></p>
+<p align="center">
+  <a href="./digital_clock"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/digital_clock/app.py?color=darkorange&logo=buffer&style=flat-square">
+</p>
 
 
 ---
@@ -52,7 +55,9 @@
   <img src="calculator_age/assets/screenshot/calculator_age_02.png" alt="calculadora photo" width="380" height="400"/>
 </p>
 
-<p><i><b style="font-size: 18px; color:#900C3F">Code :arrow_right: <a href="./calculator_age"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_age/app.py?color=darkorange&logo=buffer&style=flat-square"></p>
+<p align="center">
+  <a href="./calculator_age"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_age/app.py?color=darkorange&logo=buffer&style=flat-square">
+</p>
 
 
 ---
