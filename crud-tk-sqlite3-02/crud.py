@@ -32,7 +32,7 @@ def connectionDB():
         messagebox.showwarning(title="Attention!",message="Database already exists")
 
     finally:
-        return conn.closet()
+        return conn.close()
 
 
 def quitApplication():

@@ -54,7 +54,7 @@ timage = ImageTk.PhotoImage(image1)
 limage = Label(image=timage, border = 0, bg="white",justify="center")
 limage.place(x=115, y=60)
 
-def cmd():
+def cmd(e=None):
     if e1.get() == 'Enidev911' and e2.get() == '12345':
         messagebox.showinfo('LOGIN SUCCESFULLY', '\tWELCOME\t')
         q = Tk()
@@ -62,11 +62,14 @@ def cmd():
     else:
         messagebox.showwarning('LOGIN FAILED', '\tPLEASE TRY AGAIN\t')
 
-Button(w, width=20, height=2, 
+btn_login = Button(w, width=20, height=2, 
         text='L O G I N',fg="white",bg='#139511',
         font=('Helvetica', 11, 'bold'),border=0, 
         activebackground='darkorange',activeforeground='yellow',
-        cursor='hand2',command=cmd).place(x=80, y=375)
+        cursor='hand2',command=cmd)
 
+btn_login.place(x=80, y=375)
+
+w.bind('<Return>', cmd)
 
 w.mainloop()

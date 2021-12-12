@@ -1,9 +1,11 @@
-# Método un solo archivo
+﻿# Método un solo archivo
 # -*- mode: python ; coding: utf-8 -*-
 
 
 block_cipher = None
 
+
+# Replace {variable} 
 
 a = Analysis(['main.py'],
              pathex=['C:\\Users\\home\\Desktop\Enidev911\\PythonTk\\basic_calculator'],
