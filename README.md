@@ -1,5 +1,6 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/EniDev911/PythonTk?color=%2349D113&logo=files&logoColor=yellow&style=for-the-badge)&nbsp;&nbsp;&nbsp;
 ![GitHub top language](https://img.shields.io/github/languages/top/EniDev911/PythonTk?color=blue&logo=python&logoColor=darkorange&style=for-the-badge)&nbsp;&nbsp;&nbsp;
+![Lines of code](https://img.shields.io/tokei/lines/github/EniDev911/PythonTk?logo=codereview&style=for-the-badge)&nbsp;&nbsp;&nbsp;
 
 
 
@@ -93,7 +94,7 @@
 </p>
 
 <p align="center">
-  <a href="./digital_clock_modern"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=buffer&style=flat-square"></p>
+  <a href="./digital_clock_modern"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a></p>
 
 ---
 
@@ -111,7 +112,7 @@
   <img src="Splash_screen/screenshot/splash_04.png" alt="splash photo" width="350" height="210"/>
 </p>
 
-  <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b> :arrow_right: </i><a href="./Splash_screen"><img src="assets/gif/file-py.gif" width="27"></a></p>
+<p align="center"><a href="./Splash_screen"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/Splash_screen/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a></p>
 
 ### *POKEDEX CANVAS*
 

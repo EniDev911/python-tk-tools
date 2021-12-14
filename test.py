@@ -10,7 +10,6 @@ for caso in casos:
 
 	if imc < 18.0:
 		print('BAJO PESO')
-
 	elif imc <= 24.9:
 		print('NORMAL')
 
