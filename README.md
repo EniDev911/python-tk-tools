@@ -1,4 +1,4 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/EniDev911/PythonTk?color=darkorange&logo=files&logoColor=yellow&style=for-the-badge)&nbsp;&nbsp;&nbsp;
+![GitHub repo size](https://img.shields.io/github/repo-size/EniDev911/PythonTk?color=%2349D113&logo=files&logoColor=yellow&style=for-the-badge)&nbsp;&nbsp;&nbsp;
 ![GitHub top language](https://img.shields.io/github/languages/top/EniDev911/PythonTk?color=blue&logo=python&logoColor=darkorange&style=for-the-badge)&nbsp;&nbsp;&nbsp;
 
 
@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="./basic_calculator"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=buffer&style=flat-square">
+  <a href="./basic_calculator"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
 </p>
 
 
@@ -38,8 +38,7 @@
   <img src="digital_clock/assets/screenshot/reloj_04.png" alt="reloj photo" width="370" height="180"/>
 </p>
 
-<p align="center">
-   :file_folder:<a href="./digital_clock">&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/digital_clock/app.py?color=darkorange&logo=buffer&style=flat-square"></a>
+<p align="center"><a href="./digital_clock"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/digital_clock/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
 </p>
 
 
@@ -72,7 +71,7 @@
 </p>
 
 <p align="center">
-  <a href="./login_tk_a"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=buffer&style=flat-square">
+  <a href="./login_tk_a"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
 </p>
 
 
