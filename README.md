@@ -56,7 +56,7 @@
 </p>
 
 <p align="center">
-  <a href="./calculator_age"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_age/app.py?color=darkorange&logo=buffer&style=flat-square">
+  <a href="./calculator_age"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_age/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
 </p>
 
 
