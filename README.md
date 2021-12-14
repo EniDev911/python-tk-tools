@@ -39,7 +39,7 @@
 </p>
 
 <p align="center">
-  <a href="./digital_clock"><img src="assets/gif/file-py.gif" width="27"></a>&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/digital_clock/app.py?color=darkorange&logo=buffer&style=flat-square">
+   :file_folder:<a href="./digital_clock">&nbsp;&nbsp;&nbsp;<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/digital_clock/app.py?color=darkorange&logo=buffer&style=flat-square"></a>
 </p>
 
 
