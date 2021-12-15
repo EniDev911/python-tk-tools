@@ -21,6 +21,7 @@ from tkinter import *
 from tkinter import filedialog
 from tkinter.filedialog import asksaveasfile
 from tkinter import messagebox
+from tkinter import simpledialog
 import pyttsx3
 import PyPDF2
 import os
@@ -41,6 +42,8 @@ y_coordinate = (screen_height/2)-(height_window/2)
 
 app.geometry("%dx%d+%d+%d"%(width_window, height_window, x_coordinate, y_coordinate))
 app.title('Audiobook')
+path_logo = 'assets/image/audiobook.png'
+app.tk.call('wm', 'iconphoto', app._w, PhotoImage(file=path_logo))
 app.resizable(0,0)
 app.configure(bg=BG)
 
@@ -54,11 +57,13 @@ def clic():
 	global path
 	path = filedialog.askopenfilename(initialdir='./')
 	print(path)
-	lbl_openfile.config(text=path)
-	filename = os.path.basename(path)
-	lbl_openfile.config(text=filename)
-	lbl_openfile.pack()
-	save_OUTPUT.place(x=148, y=210)
+	
+	if path:
+		lbl_openfile.config(text=path)
+		filename = os.path.basename(path)
+		lbl_openfile.config(text=filename)
+		lbl_openfile.pack()
+		save_OUTPUT.place(x=148, y=210)
 
 
 ## Read file
@@ -113,7 +118,10 @@ def save_as(document):
 	files = [('All files', '*.*'),
 			 ('MP3 files', '*.mp3')]
 
-	file = 	asksaveasfile(filetypes = files, defaultextension = files)
+	dialog = simpledialog.askstring("INFO", "Nombre para el mp3?")
+	ext = '.mp3'
+	namesave = dialog+ext
+	#namesave = 	asksaveasfile(mode='w', filetypes=files, defaultextension = files)
 	contenido = ''
 	for page in range(reader.numPages):
 		next_page = reader.getPage(page)
@@ -121,9 +129,10 @@ def save_as(document):
 		contenido += text
 
 	print(contenido)
-
-
-	#engine.save_to_file(contenido, file)
+	#print(namesave.text.write())
+	print(namesave)
+	engine.save_to_file(contenido, namesave)
+	engine.runAndWait()
 
 
 

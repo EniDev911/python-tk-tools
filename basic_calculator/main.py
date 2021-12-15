@@ -1,8 +1,29 @@
+#-------------------------------------------------------------------------------
+#          Name: Basic_calculator - main.py
+#
+#         Autor: Marco Contreras
+#
+# Código fuente: https:github.com/enidev911
+#     Copyright: (c) Marco Contreras
+#       Licence: <MIT>
+#-------------------------------------------------------------------------------
+
+
+
+# Execute for HD windows, compatible with S.O windows
+try:
+    from ctypes import windll
+    windll.shcore.SetProcesDpiAwareness(1)
+    print(windll.shcore)
+except:
+    pass
+
 from tkinter import *
 from tkinter import ttk
 import tkinter.font as font
 import os
 import sys
+
 
 
 if getattr(sys, 'frozen', False):
@@ -15,13 +36,26 @@ else:
 
 
 
+
 root = Tk()
-#root.geometry("500x420")
+width_window = 427
+height_window = 250
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+x_coordinate = (screen_width/2)-(width_window/2)
+y_coordinate = (screen_height/2)-(height_window/2)
+root.geometry("%dx%d+%d+%d"%(width_window, height_window, x_coordinate, y_coordinate))
+root.overrideredirect(1)
+root.resizable(0, 0)
+
+
+root = Tk()
+root.geometry("500x420")
 root.title("Calculator")
 path_logo = r'assets\logo\logo.png'
 # Comenta la siguiente línea si no tienes la ruta del logo
-root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file=path_logo))
-root.resizable(0, 0)
+w.tk.call('wm', 'iconphoto', root._w, PhotoImage(file=path_logo))
+#root.resizable(0, 0)
 root.config(padx=5)
 root.config(pady=5)
 
