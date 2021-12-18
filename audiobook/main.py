@@ -46,6 +46,7 @@ path_logo = 'assets/image/audiobook.png'
 app.tk.call('wm', 'iconphoto', app._w, PhotoImage(file=path_logo))
 app.resizable(0,0)
 app.configure(bg=BG)
+app.update_idletasks()
 
 ## init the speaker
 engine = pyttsx3.init("sapi5")
@@ -55,9 +56,13 @@ engine = pyttsx3.init("sapi5")
 path = None
 def clic():
 	global path
-	path = filedialog.askopenfilename(initialdir='./')
+
+	files = [('PDF files', '*.pdf'),
+			 ('All files', '*.*')]
+
+	path = filedialog.askopenfilename(initialdir='./', filetypes=files)
 	print(path)
-	
+
 	if path:
 		lbl_openfile.config(text=path)
 		filename = os.path.basename(path)
@@ -118,21 +123,24 @@ def save_as(document):
 	files = [('All files', '*.*'),
 			 ('MP3 files', '*.mp3')]
 
-	dialog = simpledialog.askstring("INFO", "Nombre para el mp3?")
+	dialog = simpledialog.askstring("INFO", "Nombre para el mp3?", parent=app)
 	ext = '.mp3'
-	namesave = dialog+ext
+	print(dialog)
+	
+	if dialog != None:
+		namesave = dialog+ext
 	#namesave = 	asksaveasfile(mode='w', filetypes=files, defaultextension = files)
-	contenido = ''
-	for page in range(reader.numPages):
-		next_page = reader.getPage(page)
-		text = next_page.extractText()
-		contenido += text
+		contenido = ''
+		for page in range(reader.numPages):
+			next_page = reader.getPage(page)
+			text = next_page.extractText()
+			contenido += text
 
-	print(contenido)
-	#print(namesave.text.write())
-	print(namesave)
-	engine.save_to_file(contenido, namesave)
-	engine.runAndWait()
+		print(contenido)
+		#print(namesave.text.write())
+		print(namesave)
+		engine.save_to_file(contenido, namesave)
+		engine.runAndWait()
 
 
 
@@ -153,6 +161,10 @@ save_img = Image.open('assets/image/save.png')
 save_resized = save_img.resize((28, 28), Image.ANTIALIAS)
 my_saveimg = ImageTk.PhotoImage(save_resized)
 
+# File_explorer img
+img_fs = Image.open('assets/image/file_explorer.png')
+fs_resized = img_fs.resize((45, 40), Image.ANTIALIAS)
+my_openimg = ImageTk.PhotoImage(fs_resized)
 
 logo = Label(app, image=my_image, bg=BG)
 logo.pack(pady=(15,0))
@@ -174,9 +186,10 @@ page_number_box.pack()
 
 
 
-open_PDF = Button(app, text='Open', width=20, 
-					bd=2, relief='raised', 
-					bg='#21956F', fg='white',
+open_PDF = Button(app, image=my_openimg, width=40, 
+					bd=0, relief='raised',
+					bg=BG, fg='white',
+					activebackground=BG, 
 					cursor='hand2', font=('Century gothic', 12, 'bold'),
 					command=clic)
 open_PDF.pack(pady=(20,0))
