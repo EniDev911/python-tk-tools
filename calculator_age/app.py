@@ -22,6 +22,7 @@ def calculate_age():
 
     today = datetime.date.today()
     b=str(today)
+    print(b[0])
     year = b[0]+b[1]+b[2]+b[3]
     age = int(year)-b_year
     month = b[5]+b[6]

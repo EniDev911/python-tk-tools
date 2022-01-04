@@ -25,41 +25,17 @@ import os
 import sys
 
 
-
-if getattr(sys, 'frozen', False):
-    # If the application is run as a bundle, the PyInstaller bootloader
-    # extends the sys module by a flag frozen=True and sets the app 
-    # path into variable _MEIPASS'.
-    application_path = sys._MEIPASS
-else:
-    application_path = os.path.dirname(os.path.abspath(__file__))
-
-
-
-
 root = Tk()
-width_window = 427
-height_window = 250
-screen_width = root.winfo_screenwidth()
-screen_height = root.winfo_screenheight()
-x_coordinate = (screen_width/2)-(width_window/2)
-y_coordinate = (screen_height/2)-(height_window/2)
-root.geometry("%dx%d+%d+%d"%(width_window, height_window, x_coordinate, y_coordinate))
-root.overrideredirect(1)
-root.resizable(0, 0)
-
-
-root = Tk()
-root.geometry("500x420")
 root.title("Calculator")
 path_logo = r'assets\logo\logo.png'
 # Comenta la siguiente línea si no tienes la ruta del logo
-w.tk.call('wm', 'iconphoto', root._w, PhotoImage(file=path_logo))
-#root.resizable(0, 0)
+root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file=path_logo))
+root.resizable(0, 0)
 root.config(padx=5)
 root.config(pady=5)
 
-# maneja el texto en la pantalla
+
+# text input
 input_ = StringVar()
 myFont = font.Font(size=17)
 
@@ -68,23 +44,22 @@ screen = Entry(root, text=input_,width=25,
                 justify='right', font=myFont, bd=4)
 screen.grid(row=0, columnspan=4,pady= (5, 15),ipady=5,sticky="w"+"e")
 
-# Key matrix contiene todos los valores para el teclado
+# calculator keyboard settings
 key_matrix = [["C", u"\u221A", "/", u"\u25C4"],
               ["7", "8", "9", "*"],
               ["4", "5", "6", "-"],
               ["1", "2", "3", "+"],
               ["!", 0, ".", "="]]
 
-# Definimos un dictionary para manejar los botones que creemos
+#  define a dictionary to add the widgets
 btn_dict = {}
 
-# Variable para almacenar el resultado
+# Variable to store the result
 ans_to_print = 0
 
 # Defining the function for calculation
 def Calculate(event):
 
-    # invocamos al texto que tiene el boton
     button = event.widget.cget("text")
 
     # Referencia a los valores
@@ -118,13 +93,13 @@ def Calculate(event):
             input_.set(input_.get()+str(button))
 
     except:
-        # En caso de que la expresión sea invalidad
+        # In case the expression is invalid
         input_.set("Wrong operation")
 
 
-# Declarando un estilo para los botones
+# define a style for all buttons
 style = ttk.Style()
-style.configure("TButton",font = myFont, width=3)
+style.configure("TButton",font = myFont, width=5)
 style.map("TButton", background = [('active', 'gray70')],
                      foreground = [('pressed', 'green')])
 
@@ -135,7 +110,6 @@ def write(char):
 
 # Numero de fila que contiene los botones
 for i in range(len(key_matrix)):
-    print(i)
     # Numeros de columnas
     for j in range(len(key_matrix[i])):
 
@@ -150,8 +124,6 @@ for i in range(len(key_matrix)):
         # Asignando la acción a los botones al presionas el clic izquierdo
         btn_dict["btn_"+str(key_matrix[i][j])].bind('<Button-1>', Calculate)
         
-
-
 
 for n in range(0, 10):
     print(n)

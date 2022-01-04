@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 import time
+import os 
 
 root = tk.Tk()
 root.resizable(0, 0)
@@ -23,6 +24,16 @@ lbl_current_time['foreground'] = '#ffffff'
 lbl_current_time['background'] = '#443355'
 lbl_current_time.pack(fill='both', expand=True, padx=20)
 
+
+
+# Font system
+#f = os.listdir(os.getenv('SystemRoot'))
+#C:\Windows\Fonts
+#font_root = os.getenv('SystemRoot')
+#fonts_system = os.path.join(font_root, 'Fonts')
+#list_font_system = os.listdir(fonts_system)
+#for f in os.listdir(fonts_system):
+#	print(f)
 
 # Combobox Select font
 fonts = ['Helvetica', 'Consolas', 'Lucida Console', 'Segoe script',

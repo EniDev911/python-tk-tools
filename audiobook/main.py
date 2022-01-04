@@ -27,6 +27,7 @@ import PyPDF2
 import os
 from PIL import Image, ImageTk
 import os 
+import webbrowser
 
 # COLORS
 BG = '#0F082A'
@@ -46,7 +47,6 @@ path_logo = 'assets/image/audiobook.png'
 app.tk.call('wm', 'iconphoto', app._w, PhotoImage(file=path_logo))
 app.resizable(0,0)
 app.configure(bg=BG)
-app.update_idletasks()
 
 ## init the speaker
 engine = pyttsx3.init("sapi5")
@@ -60,18 +60,21 @@ def clic():
 	files = [('PDF files', '*.pdf'),
 			 ('All files', '*.*')]
 
-	path = filedialog.askopenfilename(initialdir='./', filetypes=files)
-	print(path)
+	path = filedialog.askopenfilename(
+						title = "Select a PDF file",
+						initialdir='./', 
+						filetypes=files,
+						parent=app)
+	
 
 	if path:
-		lbl_openfile.config(text=path)
+
 		filename = os.path.basename(path)
 		lbl_openfile.config(text=filename)
 		lbl_openfile.pack()
 		save_OUTPUT.place(x=148, y=210)
 
 
-## Read file
 
 ## play talk
 def talk():
@@ -123,7 +126,7 @@ def save_as(document):
 	files = [('All files', '*.*'),
 			 ('MP3 files', '*.mp3')]
 
-	dialog = simpledialog.askstring("INFO", "Nombre para el mp3?", parent=app)
+	dialog = simpledialog.askstring("INFO", "Name to mp3?", parent=app)
 	ext = '.mp3'
 	print(dialog)
 	
@@ -137,7 +140,6 @@ def save_as(document):
 			contenido += text
 
 		print(contenido)
-		#print(namesave.text.write())
 		print(namesave)
 		engine.save_to_file(contenido, namesave)
 		engine.runAndWait()
@@ -210,6 +212,34 @@ save_OUTPUT = Button(app, image=my_saveimg, width=50,
 						cursor='hand2',
 						command=lambda : save_as(path))
 
+# Footer S.M
+frame = LabelFrame(app, text='FOLLOW ME',
+				   fg=FG, bg=BG, bd=0,
+				   labelanchor='n',
+				   font=('Century gothic', 8, 'italic bold'),
+				   width=350, height=35)
+frame.place(x=235, y=390)
 
+img_github = Image.open('assets/image/social_media/github(96x96).png')
+github_resized = img_github.resize((30, 30), Image.ANTIALIAS)
+my_img_github = ImageTk.PhotoImage(github_resized)
+
+btn_github = Button(frame, image=my_img_github,
+					  bd=0,bg=BG,
+					  activebackground=BG, 
+					  cursor='hand2',
+					  command=lambda: webbrowser.open('https://github.com/EniDev911'))
+btn_github.pack(side='left', padx=10)
+
+img_facebook = Image.open('assets/image/social_media/facebook(96x96).png')
+facebook_resized = img_facebook.resize((30, 30), Image.ANTIALIAS)
+my_img_facebook = ImageTk.PhotoImage(facebook_resized)
+
+btn_facebook = Button(frame, image=my_img_facebook,
+					  bd=0,bg=BG,
+					  activebackground=BG, 
+					  cursor='hand2',
+					  command=lambda: webbrowser.open('https://www.facebook.com/profile.php?id=100009064421475'))
+btn_facebook.pack(side='right')
 
 app.mainloop()
