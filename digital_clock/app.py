@@ -55,3 +55,62 @@ def update_clock():
 
 update_clock()
 root.mainloop()
+
+
+
+# Font system
+#f = os.listdir(os.getenv('SystemRoot'))
+#C:\Windows\Fonts
+#font_root = os.getenv('SystemRoot')
+#fonts_system = os.path.join(font_root, 'Fonts')
+#list_font_system = os.listdir(fonts_system)
+#for f in os.listdir(fonts_system):
+#	print(f)
+# Font system
+#f = os.listdir(os.getenv('SystemRoot'))
+#C:\Windows\Fonts
+#font_root = os.getenv('SystemRoot')
+#fonts_system = os.path.join(font_root, 'Fonts')
+#list_font_system = os.listdir(fonts_system)
+#for f in os.listdir(fonts_system):
+#	print(f)
+# Font system
+#f = os.listdir(os.getenv('SystemRoot'))
+#C:\Windows\Fonts
+#font_root = os.getenv('SystemRoot')
+#fonts_system = os.path.join(font_root, 'Fonts')
+#list_font_system = os.listdir(fonts_system)
+#for f in os.listdir(fonts_system):
+#	print(f)
+# Font system
+#f = os.listdir(os.getenv('SystemRoot'))
+#C:\Windows\Fonts
+#font_root = os.getenv('SystemRoot')
+#fonts_system = os.path.join(font_root, 'Fonts')
+#list_font_system = os.listdir(fonts_system)
+#for f in os.listdir(fonts_system):
+#	print(f)
+# Font system
+#f = os.listdir(os.getenv('SystemRoot'))
+#C:\Windows\Fonts
+#font_root = os.getenv('SystemRoot')
+#fonts_system = os.path.join(font_root, 'Fonts')
+#list_font_system = os.listdir(fonts_system)
+#for f in os.listdir(fonts_system):
+#	print(f)
+# Font system
+#f = os.listdir(os.getenv('SystemRoot'))
+#C:\Windows\Fonts
+#font_root = os.getenv('SystemRoot')
+#fonts_system = os.path.join(font_root, 'Fonts')
+#list_font_system = os.listdir(fonts_system)
+#for f in os.listdir(fonts_system):
+#	print(f)
+# Font system
+#f = os.listdir(os.getenv('SystemRoot'))
+#C:\Windows\Fonts
+#font_root = os.getenv('SystemRoot')
+#fonts_system = os.path.join(font_root, 'Fonts')
+#list_font_system = os.listdir(fonts_system)
+#for f in os.listdir(fonts_system):
+#	print(f)
