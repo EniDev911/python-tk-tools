@@ -24,8 +24,6 @@ lbl_current_time['foreground'] = '#ffffff'
 lbl_current_time['background'] = '#443355'
 lbl_current_time.pack(fill='both', expand=True, padx=20)
 
-
-
 # Font system
 #f = os.listdir(os.getenv('SystemRoot'))
 #C:\Windows\Fonts
@@ -55,6 +53,3 @@ def update_clock():
 
 update_clock()
 root.mainloop()
-
-
-
