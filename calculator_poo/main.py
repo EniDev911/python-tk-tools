@@ -65,19 +65,35 @@ class Calculator:
 			button.grid(row=grid_value[0], column=grid_value[1],
 						sticky=tk.NSEW)
 
+	def append_operator(self, operator):
+		self.current_expression += operator
+		self.total_expression += self.current_expression
+		self.current_expression = ""
+		self.update_label()
+		self.update_total_label()
+
 	def create_operator_buttons(self):
 		i = 0
 		for operator, symbol in self.operations.items():
 			button = tk.Button(self.buttons_frame, text=symbol,
 								bg=OFF_WHITE, fg=LABEL_COLOR,
-								font=DEFAULT_FONT_STYLE, bd=0)
+								font=DEFAULT_FONT_STYLE, bd=0,
+								command= lambda x = operator: self.append_operator(x))
 			button.grid(row=i, column=4, sticky=tk.NSEW)
 			i += 1
-			
+
+
+	def clear(self):
+		self.current_expression = ""
+		self.total_expression = ""
+		self.update_label()
+		self.update_total_label()
+
+	
 	def create_clear_button(self):
 		button = tk.Button(self.buttons_frame, text="C", bg=OFF_WHITE,
 								fg=LABEL_COLOR, font=DEFAULT_FONT_STYLE,
-								borderwidth=0)
+								borderwidth=0, command=self.clear)
 		button.grid(row=0, column=1, columnspan=3, sticky=tk.NSEW)
 
 	def create_equals_button(self):

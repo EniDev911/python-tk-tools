@@ -1,8 +1,9 @@
 venv/
-build/
-__pycache__/
-dist/
-Output/
+*/__pycache__/
+*/venv/
+*/dist/
+*/build/
+
 
 *.mp3
 *.db

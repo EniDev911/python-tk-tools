@@ -1,8 +1,8 @@
 #-------------------------------------------------------------------------------
-# Name:        To-Do List App
-# Purpose:
+# Name: To-Do List 
+# support: https://www.buymeacoffee.com/9111592    
 #
-# Author:      Enidev
+# Author: EniDev911
 #-------------------------------------------------------------------------------
 import tkinter
 import tkinter.messagebox
@@ -36,8 +36,11 @@ def add_task(event=None):
 def delete_task(event=None):
     task = lst_task.selection_get()
     option = tkinter.messagebox.askyesno('Warning!', f'Are you sure to delete a task {task}?')
-    if option:
+    if option and task:
         lst_task.delete(tkinter.ACTIVE)
+    else:
+      tkinter.messagebox.showinfo("You must select a task")
+
     entry_task.focus()
 
 

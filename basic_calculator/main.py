@@ -9,7 +9,6 @@
 #-------------------------------------------------------------------------------
 
 
-
 # Execute for HD windows, compatible with S.O windows
 try:
     from ctypes import windll
@@ -90,14 +89,16 @@ def Calculate(event):
 
         else:
             # Mostrando el digito presionado
-            input_.set(input_.get()+str(button))
+            if button:
+                input_.set(input_.get()+str(button))
+            input_.set(input_.get()+str(event))
 
     except:
         # In case the expression is invalid
         input_.set("Wrong operation")
 
 
-# define a style for all buttons
+# Estlo para los botones
 style = ttk.Style()
 style.configure("TButton",font = myFont, width=5)
 style.map("TButton", background = [('active', 'gray70')],
@@ -123,13 +124,14 @@ for i in range(len(key_matrix)):
 
         # Asignando la acción a los botones al presionas el clic izquierdo
         btn_dict["btn_"+str(key_matrix[i][j])].bind('<Button-1>', Calculate)
+        #btn_dict["btn_"+str(key_matrix[i][j])].bind(f"<KP_{i}>", lambda event: Calculate(event.char))
         
 
 for n in range(0, 10):
     print(n)
     root.bind(str(n), lambda event: write(event.char))
-    root.bind(f"<KP_{n}>", lambda event: write(event.char))
-    btn_dict["btn_"+str(key_matrix[i][j])].bind(f"<KP_{n}>", Calculate)
+    root.bind(f"<KP_{n}>", lambda event: Calculate(event))
+    #btn_dict["btn_"+str(key_matrix[i][j])].bind(f"<KP_{n}>", Calculate)
     
 
 
