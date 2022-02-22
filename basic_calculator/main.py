@@ -4,7 +4,7 @@
 #         Autor: Marco Contreras
 #
 # Código fuente: https://github.com/EniDev911/PythonTk/tree/master/basic_calculator
-#       Support: (c) Marco Contreras
+#       Support: https://www.buymeacoffee.com/9111592
 #       Licence: <MIT>
 #----------------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ import sys
 
 root = Tk()
 root.title("Calculator")
-path_logo = r'assets\logo\logo.png'
+path_logo = r'assets\logo.png'
 root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file=path_logo))
 root.resizable(0, 0)
 root.config(padx=5)
@@ -34,7 +34,7 @@ root.config(pady=5)
 
 
 # text input
-input_ = StringVar()
+input_ = StringVar(value="0")
 myFont = font.Font(size=17)
 
 # display
@@ -57,7 +57,6 @@ ans_to_print = 0
 
 # Defining the function for calculation
 def calculate(event=None):
-    event.widget.text = "a"
     button = event.widget.cget("text")
 
 
@@ -72,7 +71,7 @@ def calculate(event=None):
             input_.set(str(answer)[:11])
 
         elif button.upper() == "C":  # Limpiar pantalla
-            input_.set("")
+            input_.set("0")
 
         elif button == "!":  # Factorial
             def fact(n): return 1 if n == 0 else n*fact(n-1)
@@ -89,6 +88,8 @@ def calculate(event=None):
         else:
             # Mostrando el digito presionado
             if button:
+                if input_.get() == "0":
+                    input_.set("")                
                 input_.set(input_.get()+str(button))                
 
             #input_.set(input_.get()+str(event))
@@ -103,7 +104,6 @@ style = ttk.Style()
 style.configure("TButton",font = myFont, width=5)
 style.map("TButton", background = [('active', 'gray70')],
                      foreground = [('pressed', 'green')])
-
 
 
 # Creando los botones

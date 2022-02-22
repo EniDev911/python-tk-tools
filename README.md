@@ -1,24 +1,37 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/EniDev911/PythonTk?color=%2349D113&logo=files&logoColor=yellow&style=for-the-badge)&nbsp;&nbsp;&nbsp;
-![GitHub top language](https://img.shields.io/github/languages/top/EniDev911/PythonTk?color=blue&logo=python&logoColor=darkorange&style=for-the-badge)&nbsp;&nbsp;&nbsp;
-![Lines of code](https://img.shields.io/tokei/lines/github/EniDev911/PythonTk?logo=codereview&style=for-the-badge)&nbsp;&nbsp;&nbsp;
+<p align="center">
+  <img src="assets/banner.png">
+</p>
 
 
+<h2 align="center">Tkinter-Projects</h2> 
 
-## *Enidev911*  <img src="assets/gif/python.gif" width="28">
+<hr>
+
+<p align="center">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/enidev911/PythonTk?color=%23FF7034&logo=files&logoColor=%23FCCF5A&style=for-the-badge">
+  &nbsp;&nbsp;&nbsp;
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/enidev911/PythonTk?color=%23FF7034&logo=python&logoColor=%23FF7034&style=for-the-badge">
+  &nbsp;&nbsp;&nbsp;
+  <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/enidev911/PythonTk?color=%23FF7034&logo=codereview&logoColor=%23FBE7B2&style=for-the-badge">
+</p>
+
+
 
 
 ### *Simple calculator*
 
-
+<!-- Images -->
 <p align="center">
   <img src="basic_calculator/assets/screenshot/calculator_01.png" alt="calculator photo" width="350" height="350"/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="basic_calculator/assets/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
 </p>
 
-
+<!-- Go project -->
 <p align="center">
-  <a href="./basic_calculator"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
+  <a href="./basic_calculator">
+    <img src="basic_calculator/assets/logo.png" width="40"><br>
+   <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
 </p>
 
 
