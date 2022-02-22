@@ -34,12 +34,20 @@
 </p>
 
 
----
+
+### *Calculator :  Poo*
 
 
-### *Digital Clock*
+<!-- Images -->
+<p align="center">
+  <img src="calculator_poo/assets/calculator_01.png" />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="calculator_poo/assets/calculator_02.png" alt="calculator photo" width="350" height="350"/>
+</p>
 
 
+C:\Users\Marco\Desktop\_\Python\PythonTk\calculator_poo\assets
+<!--
 <p align="center">
   <img src="digital_clock/assets/screenshot/reloj_01.png" alt="reloj photo" width="370" height="180"/>
   &nbsp;&nbsp;&nbsp;
@@ -55,6 +63,7 @@
 <p align="center"><a href="./digital_clock"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/digital_clock/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
 </p>
 
+-->
 
 ---
 
