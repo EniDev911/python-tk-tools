@@ -45,6 +45,15 @@
   <img src="calculator_poo/assets/calculator_2.png" alt="calculator photo" width="350" height="600"/>
 </p>
 
+<!-- Go project -->
+<p align="center">
+  <a href="./calculator_poo">
+    <img src="calculator_poo/calculator_icon.png" width="40"><br>
+   <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_poo/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
+</p>
+
+
+
 <!--
 <p align="center">
   <img src="digital_clock/assets/screenshot/reloj_01.png" alt="reloj photo" width="370" height="180"/>
