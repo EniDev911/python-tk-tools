@@ -40,13 +40,11 @@
 
 <!-- Images -->
 <p align="center">
-  <img src="calculator_poo/assets/calculator_01.png" />
+  <img src="calculator_poo/assets/calculator_1.png" alt="calculator photo" width="350" height="600"/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="calculator_poo/assets/calculator_02.png" alt="calculator photo" width="350" height="350"/>
+  <img src="calculator_poo/assets/calculator_2.png" alt="calculator photo" width="350" height="600"/>
 </p>
 
-
-C:\Users\Marco\Desktop\_\Python\PythonTk\calculator_poo\assets
 <!--
 <p align="center">
   <img src="digital_clock/assets/screenshot/reloj_01.png" alt="reloj photo" width="370" height="180"/>

@@ -1,3 +1,10 @@
+try:
+    from ctypes import windll
+    windll.shcore.SetProcesDpiAwareness(1)
+    print(windll.shcore)
+except:
+    pass
+
 import tkinter as tk 
 import os
 import sys 
