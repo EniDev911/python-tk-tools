@@ -1,11 +1,13 @@
 venv/
-*/__pycache__/
-*/venv/
-*/dist/
-*/build/
+*__pycache__/
+*venv/
+*dist/
+*build/
 
 
+*.dat
 *.mp3
 *.db
 *.iss
 *.spec
+*.exe
