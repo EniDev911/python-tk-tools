@@ -2,7 +2,6 @@
   <img src="assets/banner.png" width="730">
 </p>
 
-
 <h2 align="center">Tkinter-Projects</h2> 
 
 <hr>
