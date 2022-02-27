@@ -5,6 +5,7 @@ w = Tk()
 w.geometry('350x500+600+150')
 w.title('L O G I N')
 w.resizable(0,0)
+w.tk.call('wm', 'iconphoto', w._w, PhotoImage(file='icon.png'))
 
 j = 0
 r = 0
@@ -16,10 +17,7 @@ for i in range(100):
     j += 10
     r += 2
     
-    
 Frame(w, width=250, height=400, bg='white').place(x=50, y=50)
-
-
 
 # fonts
 font1 = ('consolas', 13)
@@ -48,7 +46,7 @@ Frame(w, width=180, height=2, bg="#139313").place(x=80,y=330)
 # Include image
 from PIL import Image, ImageTk
 
-image1 = Image.open('assets/img/user.png')
+image1 = Image.open('user.png')
 timage = ImageTk.PhotoImage(image1)
 
 limage = Label(image=timage, border = 0, bg="white",justify="center")

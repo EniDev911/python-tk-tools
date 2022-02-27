@@ -19,7 +19,6 @@ x_coordinate = (screen_width/2) - (width_window/2)
 y_coordinate = (screen_height/2) - (height_window/2)
 root.geometry('%dx%d+%d+%d'%(width_window,height_window, x_coordinate, y_coordinate))
 root.title("To-Do List by Enidev911")
-#root.overrideredirect(1)
 
 
 # Functions
@@ -36,7 +35,7 @@ def add_task(event=None):
 
 def delete_task(event=None):
     task = lst_task.selection_get()
-    option = tkinter.messagebox.askyesno('Warning!', f'Are you sure to delete a task {task}?')
+    option = tkinter.messagebox.askyesno('Warning!', f'Are you sure to delete a  task {task}?')
     if option and task:
         lst_task.delete(tkinter.ACTIVE)
     else:
@@ -55,14 +54,11 @@ def load_task():
         lst_task.insert('end', task)
 
 
-# Binding
-root.bind('<Return>', add_task)
-root.bind('<Delete>', delete_task)
 
 # Fonts
-font_s = ('Century gothic', 15)
-font_m = ('Century gothic', 18)
-font_xl = ('Segoe UI', 21)
+font_s = ('Century gothic', 18)
+font_m = ('Century gothic', 22)
+font_xl = ('Segoe UI', 24)
 
 # messages
 var_msg = tkinter.StringVar()
@@ -127,4 +123,9 @@ btn_quit = tkinter.Button(root, text='Exit', font=font_m,
                               command=root.destroy)
 btn_quit.pack(fill='x')
 
+
+# Binding : events
+root.bind('<Return>', add_task)
+root.bind('<Delete>', delete_task)
+# Run
 root.mainloop()

@@ -4,7 +4,7 @@ from tkinter import *
 
 w = Tk()
 width_window = 427
-height_window = 250
+height_window = 255
 screen_width = w.winfo_screenwidth()
 screen_height = w.winfo_screenheight()
 x_coordinate = (screen_width/2)-(width_window/2)
@@ -13,12 +13,13 @@ w.geometry("%dx%d+%d+%d"%(width_window, height_window, x_coordinate, y_coordinat
 w.overrideredirect(1)
 
 s = ttk.Style()
-s.theme_use('clam')
+s.theme_use('classic')
 print(s.theme_names())
 s.configure('red.Horizontal.TProgressbar', foreground='red', background='#4fCf4f')
 
 progress = Progressbar(w, style='red.Horizontal.TProgressbar',
                         orient=HORIZONTAL, length=500, mode='determinate')
+
 
 def main_window():
     q = Tk()
@@ -49,7 +50,7 @@ def bar():
 progress.place(x=-15, y=235)
 
 Frame(w, width=427, height=234, bg='#1F618D').place(x=0, y=0)
-b1 = Button(w, width=10, height=1, text='JUGAR', bg='#73C6B6',
+b1 = Button(w, width=10, height=1, text='PLAY', bg="#73C6B6", cursor="hand2",
         border=3, relief='raised', command=bar,fg="#212F3D", font=('Terminal', 13))
 b1.place(x=170, y=180)
 
@@ -58,10 +59,7 @@ lst1 = ('Calibri (Body)', 18, 'bold')
 l1.configure(font=lst1)
 l1.place(x=50, y=80)
 
-
-
-
-l2 = Label(w, text= "LOGO", fg="white", bg='#1F618D')
+l2 = Label(w, text= "BY", fg="white", bg='#1F618D')
 lst2 = ('Calibri (Body)', 18)
 l2.configure(font=lst1)
 l2.place(x=155, y=80)
@@ -71,5 +69,5 @@ lst3 = ('Terminal', 18, 'bold')
 l3.configure(font=lst3)
 l3.place(x=50, y=110)
 
-
+                    
 w.mainloop()
