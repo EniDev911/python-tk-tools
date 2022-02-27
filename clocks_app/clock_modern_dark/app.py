@@ -1,3 +1,13 @@
+#----------------------------------------------------------------------------------------------
+#        module: main.py
+#         Autor: Marco Contreras
+#
+# Código fuente: https://github.com/EniDev911/PythonTk/blob/master/clocks_app/clock_modern_dark
+#     Copyright: (c) Marco Contreras
+#       Licence: GPL 3.0
+#----------------------------------------------------------------------------------------------
+
+
 from tkinter import *
 from datetime import datetime
 from time import strftime
@@ -6,11 +16,11 @@ from PIL import Image, ImageTk
 w = Tk()
 width = 1400
 height = 600
-screen_width = root.winfo_screenwidth()
-screen_height = root.winfo_screenheight()
-x_coordinate = (screen_width/2) - (width_window/2)
-y_coordinate = (screen_height/2) - (height_window/2)
-w.geometry('1400x600')
+screen_width = w.winfo_screenwidth()
+screen_height = w.winfo_screenheight()
+x_coordinate = (screen_width/2) - (width/2)
+y_coordinate = (screen_height/2) - (height/2)
+w.geometry('%dx%d+%d+%d'%(width,height, x_coordinate, y_coordinate))
 w.minsize(820,200)
 
 # Background
@@ -18,7 +28,8 @@ img1 = Image.open('assets/img/bg.jpg')
 new = img1.resize((w.winfo_screenwidth(), w.winfo_screenheight()))
 img2 = ImageTk.PhotoImage(new)
 
-Label(image=img2, width=w.winfo_screenwidth()).place(x=0,y=0)
+bg = Label(image=img2, width=w.winfo_screenwidth())
+bg.place(x=0,y=0)
 
 
 f1 = Frame(w, width=820, height=200, bg='#0D0E0E')

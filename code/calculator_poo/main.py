@@ -31,7 +31,7 @@ class Calculator:
 		self.window.geometry('375x637')											    
 		self.window.resizable(0,0)												    
 		self.window.title('Calculator')
-		self.icon_png = resource_path("./calculator_icon.png")
+		self.icon_png = resource_path("./icon.png")
 		self.window.tk.call('wm', 'iconphoto', self.window._w, tk.PhotoImage(file=self.icon_png))
 		# ==============================
 		self.total_expression = ""
@@ -49,7 +49,6 @@ class Calculator:
 			"/": "\u00F7", "*": "\u00D7", "-": "-",
 			"+": "+"}
 		self.buttons_frame = self.create_buttons_frame()
-		print(self.operations.values())
 		for x in range(1, 5):
 			self.buttons_frame.rowconfigure(x, weight=1)
 			self.buttons_frame.columnconfigure(x, weight=1)

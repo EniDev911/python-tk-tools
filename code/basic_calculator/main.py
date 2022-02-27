@@ -26,7 +26,7 @@ import sys
 
 root = Tk()
 root.title("Calculator")
-path_logo = r'assets\logo.png'
+path_logo = './icon.png'
 root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file=path_logo))
 root.resizable(0, 0)
 root.config(padx=5)

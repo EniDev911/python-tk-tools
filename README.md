@@ -19,15 +19,15 @@
 <h3 align="center">Basic Calculator</h3> 
 <!-- Images -->
 <p align="center">
-  <img src="basic_calculator/assets/screenshot/calculator_01.png" alt="calculator photo" width="350" height="350"/>
-  <img src="basic_calculator/assets/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
+  <img src="assets/screenshot/basic_calculator/01.png" alt="calculator photo" width="350" height="350"/>
+  <img src="assets/screenshot/basic_calculator/02.png" alt="calculator photo" width="350" height="350"/>
 </p>
 
 <!-- Go project -->
 <p align="center">
-  <a href="./basic_calculator">
-    <img src="basic_calculator/assets/logo.png" width="40"><br>
-   <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
+  <a href="./code/basic_calculator">
+   <img src="code/basic_calculator/icon.png" width="40"><br>
+   <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/code/basic_calculator/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
 </p>
 
 --- 
@@ -36,15 +36,15 @@
 <h3 align="center">Calculator : Poo</h3> 
 <!-- Images -->
 <p align="center">
-  <img src="calculator_poo/assets/calculator_1.png" alt="calculator photo" width="350" height="600"/>
-  <img src="calculator_poo/assets/calculator_2.png" alt="calculator photo" width="350" height="600"/>
+  <img src="assets/screenshot/calculator_poo/01.png" alt="calculator photo" width="350" height="600"/>
+  <img src="assets/screenshot/calculator_poo/02.png" alt="calculator photo" width="350" height="600"/>
 </p>
 
 <!-- Go project -->
 <p align="center">
-  <a href="./calculator_poo">
+  <a href="./code/calculator_poo">
     <img src="calculator_poo/calculator_icon.png" width="40"><br>
-   <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_poo/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
+    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/code/calculator_poo/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
 </p>
 
 --- 
@@ -53,13 +53,15 @@
 <h3 align="center">Calculator age</h3> 
 <!-- Images -->
 <p align="center">
-  <img src="calculator_age/assets/screenshot/calculator_age_01.png" alt="calculadora photo" width="380" height="400"/>
-  <img src="calculator_age/assets/screenshot/calculator_age_02.png" alt="calculadora photo" width="380" height="400"/>
+  <img src="assets/screenshot/calculator_age/01.png" alt="calculator_age photo" width="380" height="400"/>
+  <img src="assets/screenshot/calculator_age/02.png" alt="calculator_age photo" width="380" height="400"/>
 </p>
 
 <!-- Go project -->
 <p align="center">
-  <a href="./calculator_age"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_age/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
+  <a href="./code/calculator_age">
+    <img src="assets/screenshot/calculator_age/app.png" width="40"><br>
+    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/code/calculator_age/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
 </p>
 
 --- 

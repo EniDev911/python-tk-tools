@@ -5,7 +5,7 @@ IF EXIST "main.py" (
 
 	echo compaling program...
 	python -m pip install pyinstaller
-	pyinstaller --onefile --icon=./app.ico --add-data "./calculator_icon.png;." -w main.py
+	pyinstaller --onefile --icon=./icon.ico --add-data "./calculator_icon.png;." -w main.py
 	cls
 	echo finish...
 
