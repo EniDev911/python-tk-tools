@@ -4,6 +4,12 @@ from time import strftime
 from PIL import Image, ImageTk
 
 w = Tk()
+width = 1400
+height = 600
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+x_coordinate = (screen_width/2) - (width_window/2)
+y_coordinate = (screen_height/2) - (height_window/2)
 w.geometry('1400x600')
 w.minsize(820,200)
 

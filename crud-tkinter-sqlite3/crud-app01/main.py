@@ -186,7 +186,7 @@ etiquetaCargo.place(x=40, y=40)
 etiquetaSalario = Label(root, text='Salario:')
 etiquetaSalario.place(x=40, y=70)
 # BOTONES PARA LAS OPERACIONES CRUD
-frame = LabelFrame(root, text='Operaciones', labelanchor='', width=170, height=90)
+frame = LabelFrame(root, text='Operaciones', labelanchor='n', width=170, height=90)
 frame.place(x=330, y=10)
 botonMostrar = ttk.Button(frame, text='MOSTRAR', command=mostrar)
 botonMostrar.place(x=5, y=5)

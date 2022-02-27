@@ -49,7 +49,7 @@ class Calculator:
 			"/": "\u00F7", "*": "\u00D7", "-": "-",
 			"+": "+"}
 		self.buttons_frame = self.create_buttons_frame()
-
+		print(self.operations.values())
 		for x in range(1, 5):
 			self.buttons_frame.rowconfigure(x, weight=1)
 			self.buttons_frame.columnconfigure(x, weight=1)
@@ -93,6 +93,7 @@ class Calculator:
 	def create_operator_buttons(self):
 		i = 0
 		for operator, symbol in self.operations.items():
+
 			button = tk.Button(self.buttons_frame, text=symbol,
 								bg=OFF_WHITE, fg=LABEL_COLOR,
 								font=DEFAULT_FONT_STYLE, bd=0,
@@ -183,10 +184,12 @@ class Calculator:
 
 		return total_label, label
 
+
 	def add_to_expression(self, value):
+
 		if self.current_expression == "0":
 			self.current_expression ="" 
-
+			
 		self.current_expression += str(value)
 		self.update_label()
 
@@ -226,3 +229,6 @@ if __name__ == '__main__':
 	# Run App.
 	calc = Calculator()
 	calc.run()
+
+	#sentence = "+++++"
+	#print(sentence.count("+"))
