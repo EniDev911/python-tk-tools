@@ -15,12 +15,11 @@
 </p>
 
 
-
+<!-- Title -->
 <h3 align="center">Basic Calculator</h3> 
 <!-- Images -->
 <p align="center">
   <img src="basic_calculator/assets/screenshot/calculator_01.png" alt="calculator photo" width="350" height="350"/>
-
   <img src="basic_calculator/assets/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
 </p>
 
@@ -31,9 +30,9 @@
    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/basic_calculator/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
 </p>
 
+--- 
 
-
-
+<!-- Title -->
 <h3 align="center">Calculator : Poo</h3> 
 <!-- Images -->
 <p align="center">
@@ -48,8 +47,22 @@
    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_poo/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
 </p>
 
+--- 
 
+<!-- Title -->
+<h3 align="center">Calculator age</h3> 
+<!-- Images -->
+<p align="center">
+  <img src="calculator_age/assets/screenshot/calculator_age_01.png" alt="calculadora photo" width="380" height="400"/>
+  <img src="calculator_age/assets/screenshot/calculator_age_02.png" alt="calculadora photo" width="380" height="400"/>
+</p>
 
+<!-- Go project -->
+<p align="center">
+  <a href="./calculator_age"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_age/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
+</p>
+
+--- 
 <!--
 <p align="center">
   <img src="digital_clock/assets/screenshot/reloj_01.png" alt="reloj photo" width="370" height="180"/>
@@ -67,25 +80,6 @@
 </p>
 
 -->
-
----
-
-
-### *Calculator Age*
-
-
-<p align="center">
-  <img src="calculator_age/assets/screenshot/calculator_age_01.png" alt="calculadora photo" width="380" height="400"/>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="calculator_age/assets/screenshot/calculator_age_02.png" alt="calculadora photo" width="380" height="400"/>
-</p>
-
-<p align="center">
-  <a href="./calculator_age"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/calculator_age/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
-</p>
-
-
----
 
 
 ### *Login Tk*
