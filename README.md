@@ -16,7 +16,7 @@
 
 
 
-<h3 align="center">Tkinter-Projects</h3> 
+<h3 align="center">Basic Calculator</h3> 
 <!-- Images -->
 <p align="center">
   <img src="basic_calculator/assets/screenshot/calculator_01.png" alt="calculator photo" width="350" height="350"/>
