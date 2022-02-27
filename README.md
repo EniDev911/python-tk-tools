@@ -17,10 +17,9 @@
 
 
 
-### *Simple calculator*
-
 <!-- Images -->
 <p align="center">
+  ### *Simple calculator*
   <img src="basic_calculator/assets/screenshot/calculator_01.png" alt="calculator photo" width="350" height="350"/>
 
   <img src="basic_calculator/assets/screenshot/calculator_02.png" alt="calculator photo" width="350" height="350"/>
