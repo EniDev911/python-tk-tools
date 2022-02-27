@@ -19,7 +19,7 @@ w.config(bd = 10, relief = 'raised', bg='gray30')
 
 def search():
 
-    pokemon = pb.pokemon(pokemon_input.get())
+    pokemon = pb.pokemon(pokemon_input.get().lower())
     try:
         details.delete('1.0', END)
         response = requests.get(pokemon.sprites.front_default)
@@ -70,6 +70,7 @@ canvas.create_rectangle(350, 460, 440, 430, width=3, fill='gray30')
 canvas.create_line(382, 430, 409, 430, width=4, fill='gray30')
 canvas.create_line(382, 460, 409, 460, width=4, fill='gray30')
 
+
 def cambiarcolor(color):
     if color == 'blue':
         canvas.itemconfigure(ligthoval, fill = '#00FF00')
@@ -88,20 +89,21 @@ l2.config(font = font1)
 l2.place(x=80, y=280)
 
 
-pokemon_input = Entry(w,width=20, border=0)
+pokemon_input = Entry(w,width=28, border=0)
 pokemon_input.config(font = font1)
+pokemon_input.focus()
 pokemon_input.place(x=80, y=310)
 
 details = Text(frame, height=10, width=32, bg='gray80')
 details.place(x=100, y=10)
 
-Frame(w, width=180, height=2, bg="#139313").place(x=80,y=330)
+Frame(w, width=320, height=2, bg="gray15").place(x=80,y=335)
 Frame(w, width=370, height=6, bg="gray25").place(x=50,y=350)
 
 
 Button(w, width=25, height=2, 
-        text='B U S C A R',fg="white",bg='#139511',
-        font=('Helvetica', 11, 'bold'),border=2, 
+        text='S E A R C H',fg="white",bg='#139511',
+        font=('Helvetica', 11, 'bold'),border=3, relief="raised", 
         activebackground='darkgreen',activeforeground='yellow',
         cursor='hand2',command=search).place(x=80, y=475)
 

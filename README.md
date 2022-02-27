@@ -25,9 +25,9 @@
 
 <!-- Go project -->
 <p align="center">
-  <a href="./code/basic_calculator">
-   <img src="code/basic_calculator/icon.png" width="40"><br>
-   <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/code/basic_calculator/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
+  <a href="./projects/basic_calculator">
+   <img src="projects/basic_calculator/icon.png" width="40"><br>
+   <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/projects/basic_calculator/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
 </p>
 
 --- 
@@ -42,9 +42,9 @@
 
 <!-- Go project -->
 <p align="center">
-  <a href="./code/calculator_poo">
-    <img src="calculator_poo/calculator_icon.png" width="40"><br>
-    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/code/calculator_poo/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
+  <a href="./projects/calculator_poo">
+    <img src="projects/calculator_poo/icon.png" width="40"><br>
+    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/projects/calculator_poo/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow">
 </p>
 
 --- 
@@ -59,9 +59,9 @@
 
 <!-- Go project -->
 <p align="center">
-  <a href="./code/calculator_age">
+  <a href="./projects/calculator_age">
     <img src="assets/screenshot/calculator_age/app.png" width="40"><br>
-    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/code/calculator_age/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
+    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/projects/calculator_age/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
 </p>
 
 --- 
@@ -76,10 +76,34 @@
 
 <!-- Go project -->
 <p align="center">
-  <a href="./code/login_tk_a">
-    <img src="code/login_tk_a/icon.png" width="40"><br>
-    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/code/login_tk_a/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
+  <a href="./projects/login_tk_a">
+    <img src="projects/login_tk_a/icon.png" width="40"><br>
+    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/projects/login_tk_a/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
 </p>
+
+--- 
+
+<!-- Title -->
+<h3 align="center">Clock : modern-dark</h3> 
+
+- ***Mode fullscreen (F11)***
+<!-- Images -->
+<p align="center">
+  <img src="assets/screenshot/clock_modern_dark/01.png" alt="clock photo"/>
+</p>
+
+- ***Normal Mode (Escape)***
+<p align="center">
+  <img src="assets/screenshot/clock_modern_dark/02.png" alt="clock photo"/>
+</p>
+
+<!-- Go project -->
+<p align="center">
+  <a href="./projects/login_tk_a">
+    <img src="projects/clocks_app/clock_modern_dark/icon.png" width="40"><br>
+    <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/projects/clocks_app/clock_modern_dark/main.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
+</p>
+
 
 
 <!--
@@ -99,79 +123,3 @@
 </p>
 
 -->
-
-
-### *Login Tk*
-
-<p align="center">
-  <img src="login_tk_a/assets/screenshot/login_02.png" alt="login photo" width="350" height="500"/>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="login_tk_a/assets/screenshot/login_01.png" alt="login photo" width="350" height="500"/>
-</p>
-
-<p align="center">
-  <a href="./login_tk_a"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a>
-</p>
-
-
----
-
-### *Modern Clock*
-
-***Mode fullscreen (F11)***
-
-<p align="center">
-  <img src="digital_clock_modern/assets/screenshot/modern_clock_01.png" alt="modern_clock photo" width="1400" height="700"/>
-</p>
-<br/>
-
-***Normal Mode (Escape)***
-
-<p align="center">
-  <img src="digital_clock_modern/assets/screenshot/modern_clock_02.png" alt="modern_clock photo" width="800" height="300"/>
-</p>
-
-<p align="center">
-  <a href="./digital_clock_modern"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/login_tk_a/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a></p>
-
----
-
-### *Splash charge screen*
-
-<p align="center">
-  <img src="Splash_screen/screenshot/splash_01.png" alt="splash photo" width="350" height="210"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="Splash_screen/screenshot/splash_02.png" alt="splash photo" width="350" height="210"/>
-</p>
-
-<p align="center">
-  <img src="Splash_screen/screenshot/splash_03.png" alt="splash photo" width="350" height="210"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="Splash_screen/screenshot/splash_04.png" alt="splash photo" width="350" height="210"/>
-</p>
-
-<p align="center"><a href="./Splash_screen"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/EniDev911/PythonTk/Splash_screen/app.py?color=darkorange&logo=files&style=flat-square&logoColor=yellow"></a></p>
-
-### *POKEDEX CANVAS*
-
-<p align="center">
-  <img src="Pokedex/screenshot/pokedex_01.png" alt="pokedex photo" width="350" height="430"/>
-  &nbsp;&nbsp;
-  <img src="Pokedex/screenshot/pokedex_02.png" alt="pokedex photo" width="350" height="430"/>
-</p>
-
-  <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b> :arrow_right: </i><a href="./Pokedex"><img src="assets/gif/file-py.gif" width="27"></a></p>
-
----
-
-### *To-Do List App*
-
-<p align="center">
-  <img src="To_DoList/screenshot/01.png" alt="To-Do List App" width="350" height="550"/>
-  &nbsp;&nbsp;
-  <img src="To_DoList/screenshot/02.png" alt="To-Do List App" width="350" height="550"/>
-</p>
-
-  <p><i><b style="font-size: 18px; color:#900C3F">Go to code</b> :arrow_right: </i><a href="./To_DoList"><img src="assets/gif/file-py.gif" width="27"></a></p>
-
-<a href="https://drive.google.com/drive/folders/1m8jJ1YD-EgUHKHMQQYe3KxBgfZMh6lBn" download="bg.jpg">Prueba</a>

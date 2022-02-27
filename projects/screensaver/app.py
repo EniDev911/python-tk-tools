@@ -43,8 +43,6 @@ class RandomBall:
 
         self.canvas.move(self.item, self.dx, self.dy)
 
-
-
 class ScreenSaver:
 
     def __init__(self, master, num_balls):
@@ -84,6 +82,3 @@ if __name__ == '__main__':
     w = tk.Tk()
     ScreenSaver(w, 18)
     w.mainloop()
-
-
-

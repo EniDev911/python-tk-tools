@@ -14,6 +14,7 @@ from time import strftime
 from PIL import Image, ImageTk
 
 w = Tk()
+w.tk.call('wm', 'iconphoto', w._w, PhotoImage(file='icon.png'))
 width = 1400
 height = 600
 screen_width = w.winfo_screenwidth()
