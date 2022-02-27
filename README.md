@@ -33,13 +33,11 @@
 
 
 
-### *Calculator :  Poo*
 
-
+<h3 align="center">Calculator : Poo</h3> 
 <!-- Images -->
 <p align="center">
   <img src="calculator_poo/assets/calculator_1.png" alt="calculator photo" width="350" height="600"/>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="calculator_poo/assets/calculator_2.png" alt="calculator photo" width="350" height="600"/>
 </p>
 
