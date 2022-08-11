@@ -18,7 +18,6 @@ w.resizable(0,0)
 w.config(bd = 10, relief = 'raised', bg='gray30')
 
 def search():
-
     pokemon = pb.pokemon(pokemon_input.get().lower())
     try:
         details.delete('1.0', END)
@@ -44,7 +43,6 @@ def search():
     except AttributeError:
         pokemon_image.configure(image='')
         details.insert(END, 'Pokemon no válido')
-
 
 
 canvas = Canvas(width=470, height=580, bg='#FF0000', highlightbackground='yellow')

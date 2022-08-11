@@ -11,7 +11,7 @@ import pickle
 import os
 
 root = tkinter.Tk()
-width_window = 500
+width_window = 400
 height_window = 600
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
@@ -27,20 +27,23 @@ def add_task(event=None):
     if task != '':
         lst_task.insert('end', task)
         entry_task.delete(0, 'end')
+        return
 
-    elif task == '':
-        var_msg.set('You must enter a task')
-        root.after(3000,lambda:var_msg.set(''))
-
+    var_msg.set('You must enter a task')
+    root.after(3000,lambda:var_msg.set(''))
 
 def delete_task(event=None):
-    task = lst_task.selection_get()
-    option = tkinter.messagebox.askyesno('Warning!', f'Are you sure to delete a  task {task}?')
-    if option and task:
-        lst_task.delete(tkinter.ACTIVE)
-    else:
-      tkinter.messagebox.showinfo("You must select a task")
-
+    try:
+        task = lst_task.selection_get()
+        option = tkinter.messagebox.askyesno('Warning!', f'Are you sure to delete a  task {task}?')
+        print(option)
+        if option and task:
+            lst_task.delete(tkinter.ACTIVE)
+        else:
+            tkinter.messagebox.showinfo("You must select a task")
+    except Exception as ex:
+        print(ex)
+        tkinter.messagebox.showinfo("INFO", "You must select some task")
     entry_task.focus()
 
 
@@ -73,7 +76,7 @@ scrollbar_tasks = tkinter.Scrollbar(frame_task)
 scrollbar_tasks.pack(side='right', fill='y')
 
 
-lst_task = tkinter.Listbox(frame_task, height=6, width=50, font=font_xl, justify='center',
+lst_task = tkinter.Listbox(frame_task, height=5, width=50, font=font_xl, justify='center',
                            selectbackground='steel blue', bg='snow')
 lst_task.pack(fill='both', expand=True)
 
@@ -89,14 +92,14 @@ entry_task.focus()
 
 
 # Buttons
-btn_add_task = tkinter.Button(root, text='Add task', font=font_m,
+btn_add_task = tkinter.Button(root, text='Add task', font=font_s,
                               bg = 'lime green', fg = 'white',
                               activebackground='green yellow',
                               command=add_task)
 btn_add_task.pack(fill='x')
 
 
-btn_delete_task = tkinter.Button(root, text='Delete task', font=font_m,
+btn_delete_task = tkinter.Button(root, text='Delete task', font=font_s,
                               bg = 'firebrick2', fg = 'white',
                               activebackground='DarkOrange1',
                               command=delete_task)
@@ -104,20 +107,20 @@ btn_delete_task.pack(fill='x')
 
 
 
-btn_save_task = tkinter.Button(root, text='Save task', font=font_m,
+btn_save_task = tkinter.Button(root, text='Save task', font=font_s,
                               bg = 'gold', fg = 'white',
                               activebackground='DarkOrange1',
                               command=save_task)
 btn_save_task.pack(fill='x')
 
 
-btn_load_task = tkinter.Button(root, text='Load task', font=font_m,
+btn_load_task = tkinter.Button(root, text='Load task', font=font_s,
                               bg = 'purple3', fg = 'white',
                               activebackground='purple4',
                               command=load_task)
 btn_load_task.pack(fill='x')
 
-btn_quit = tkinter.Button(root, text='Exit', font=font_m,
+btn_quit = tkinter.Button(root, text='Exit', font=font_s,
                               bg = 'darkred', fg = 'white',
                               activebackground='red',
                               command=root.destroy)
