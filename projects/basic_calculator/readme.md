@@ -15,7 +15,7 @@ python main.py
 
 
 <p align="center">
-	<img src="../../assets/gif/basic_calculator/run.gif" alt="gif use" style="border: 3px solid darkorange;" width="900" height="630">
+	<img src="../../assets/gif/basic_calculator/run.gif" alt="gif" width="900" height="630">
 </p>
 
 
